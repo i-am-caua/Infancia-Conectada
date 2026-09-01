@@ -1,0 +1,27 @@
+---
+import type { ArticleEntry } from '../lib/content';
+import { formatDate } from '../lib/content';
+
+interface Props {
+  articles: ArticleEntry[];
+  showDescription?: boolean;
+}
+
+const { articles, showDescription = true } = Astro.props;
+---
+
+<ol class="article-list">
+  {articles.map((article) => (
+    <li>
+      <div class="article-list-meta">
+        <time datetime={article.data.updatedAt.toISOString()}>{formatDate(article.data.updatedAt)}</time>
+        <span>{article.data.topic}</span>
+      </div>
+      <div>
+        <h3><a href={`/artigos/${article.id}/`}>{article.data.title}</a></h3>
+        {showDescription && <p>{article.data.description}</p>}
+      </div>
+      <a class="article-arrow" href={`/artigos/${article.id}/`} aria-label={`Ler: ${article.data.title}`}>→</a>
+    </li>
+  ))}
+</ol>

@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import ArticleList from '../../components/ArticleList.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { slugify, sortArticles } from '../../lib/content';
+
+const articles = sortArticles((await getCollection('artigos')).filter((article) => !article.data.draft));
+const groups = Object.entries(
+  articles.reduce<Record<string, typeof articles>>((result, article) => {
+    (result[article.data.topic] ??= []).push(article);
+    return result;
+  }, {}),
+).sort(([first], [second]) => first.localeCompare(second, 'pt-BR'));
+---
+
+<BaseLayout title="Temas" description="Explore os conteúdos do Cuidado Digital por assunto.">
+  <header class="page-header shell">
+    <p class="eyebrow">Navegação por assunto</p>
+    <h1>Comece pela pergunta que faz sentido agora.</h1>
+    <p>Os temas organizam a biblioteca sem exigir uma ordem única de leitura.</p>
+  </header>
+
+  <div class="section shell topics-directory">
+    {groups.map(([topic, topicArticles]) => (
+      <section class="topic-section" id={slugify(topic)} aria-labelledby={`${slugify(topic)}-titulo`}>
+        <h2 id={`${slugify(topic)}-titulo`}>{topic}</h2>
+        <ArticleList articles={topicArticles} />
+      </section>
+    ))}
+  </div>
+</BaseLayout>

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-01T14:49:36.1217103-03:00",
+  "title": "Design System: Cuidado Digital",
+  "extensions": {
+    "colorMeta": {
+      "brand-green": {
+        "role": "primary",
+        "displayName": "Verde IF",
+        "canonical": "oklch(0.617 0.165 145.8)",
+        "tonalRamp": ["oklch(0.250 0.060 146)", "oklch(0.350 0.090 146)", "oklch(0.465 0.123 147.7)", "oklch(0.617 0.165 145.8)", "oklch(0.720 0.130 146)", "oklch(0.820 0.090 146)", "oklch(0.910 0.040 146)", "oklch(0.970 0.010 146)"]
+      },
+      "brand-red": {
+        "role": "secondary",
+        "displayName": "Vermelho IF",
+        "canonical": "oklch(0.542 0.209 27.1)",
+        "tonalRamp": ["oklch(0.250 0.090 27)", "oklch(0.350 0.140 27)", "oklch(0.450 0.190 27)", "oklch(0.542 0.209 27.1)", "oklch(0.650 0.170 27)", "oklch(0.760 0.120 27)", "oklch(0.870 0.060 27)", "oklch(0.950 0.020 27)"]
+      },
+      "action-green": {
+        "role": "primary",
+        "displayName": "Verde de Ação",
+        "canonical": "oklch(0.465 0.123 147.7)",
+        "tonalRamp": ["oklch(0.220 0.055 148)", "oklch(0.300 0.075 148)", "oklch(0.396 0.104 147.7)", "oklch(0.465 0.123 147.7)", "oklch(0.580 0.120 148)", "oklch(0.700 0.090 148)", "oklch(0.830 0.050 148)", "oklch(0.940 0.020 148)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta Editorial",
+        "canonical": "oklch(0.250 0.016 152.7)",
+        "tonalRamp": ["oklch(0.150 0.010 153)", "oklch(0.250 0.016 153)", "oklch(0.350 0.014 153)", "oklch(0.470 0.012 153)", "oklch(0.600 0.010 153)", "oklch(0.730 0.008 153)", "oklch(0.860 0.006 153)", "oklch(0.960 0.003 153)"]
+      },
+      "surface-tint": {
+        "role": "neutral",
+        "displayName": "Superfície Verde-neutra",
+        "canonical": "oklch(0.974 0.003 145.5)",
+        "tonalRamp": ["oklch(0.300 0.010 146)", "oklch(0.420 0.010 146)", "oklch(0.550 0.009 146)", "oklch(0.680 0.008 146)", "oklch(0.790 0.007 146)", "oklch(0.870 0.006 146)", "oklch(0.930 0.004 146)", "oklch(0.974 0.003 145.5)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Título principal da página inicial." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos de páginas e artigos." },
+      "title": { "displayName": "Title", "purpose": "Chamadas editoriais e subtítulos." },
+      "body": { "displayName": "Body", "purpose": "Leitura longa e orientações práticas." },
+      "label": { "displayName": "Label", "purpose": "Navegação, metadados e botões." }
+    },
+    "shadows": [
+      { "name": "overlay-only", "value": "0 2px 8px rgb(0 0 0 / 0.12)", "purpose": "Somente menus suspensos, popovers e elementos realmente sobrepostos." }
+    ],
+    "motion": [
+      { "name": "state-fast", "value": "160ms cubic-bezier(0.25, 1, 0.5, 1)", "purpose": "Hover, foco e estados de controles." },
+      { "name": "panel-enter", "value": "240ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Abertura de navegação móvel e painéis." }
+    ],
+    "breakpoints": [
+      { "name": "content", "value": "48rem" },
+      { "name": "wide", "value": "72rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal acessível em verde funcional, sem alterar o verde da marca.",
+      "html": "<button class=\"ds-btn-primary\">Ler o conteúdo</button>",
+      "css": ".ds-btn-primary { min-height:48px; padding:12px 20px; border:0; border-radius:8px; background:#176b2d; color:#fff; font:600 15px/1.35 'Open Sans',Arial,sans-serif; cursor:pointer; transition:background 160ms cubic-bezier(.25,1,.5,1); } .ds-btn-primary:hover,.ds-btn-primary:active { background:#125523; } .ds-btn-primary:focus-visible { outline:3px solid #cd191e; outline-offset:3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação secundária com contraste e hierarquia contida.",
+      "html": "<button class=\"ds-btn-secondary\">Ver todos os temas</button>",
+      "css": ".ds-btn-secondary { min-height:48px; padding:10px 18px; border:2px solid #176b2d; border-radius:8px; background:#fff; color:#176b2d; font:600 15px/1.35 'Open Sans',Arial,sans-serif; cursor:pointer; transition:background 160ms cubic-bezier(.25,1,.5,1); } .ds-btn-secondary:hover { background:#f5f7f5; } .ds-btn-secondary:focus-visible { outline:3px solid #cd191e; outline-offset:3px; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Link direto, legível e adequado a teclado e toque.",
+      "html": "<a class=\"ds-nav-link\" href=\"#\">Temas</a>",
+      "css": ".ds-nav-link { display:inline-flex; min-height:44px; align-items:center; padding:8px 4px; color:#1c241e; font:600 15px/1.35 'Open Sans',Arial,sans-serif; text-underline-offset:4px; } .ds-nav-link:hover { color:#176b2d; } .ds-nav-link:focus-visible { outline:3px solid #cd191e; outline-offset:3px; border-radius:4px; }"
+    },
+    {
+      "name": "Editorial List Item",
+      "kind": "custom",
+      "refersTo": "editorial-index-item",
+      "description": "Alternativa editorial a grades de cartões idênticos.",
+      "html": "<article class=\"ds-story\"><p class=\"ds-story-meta\">Segurança digital · 6 min</p><h3><a href=\"#\">Como conversar sobre o que aparece na tela</a></h3><p>Um roteiro simples para transformar supervisão em diálogo.</p></article>",
+      "css": ".ds-story { padding:24px 0; border-top:1px solid #dce8de; color:#1c241e; font-family:'Open Sans',Arial,sans-serif; } .ds-story-meta { margin:0 0 8px; color:#125523; font-size:14px; font-weight:600; } .ds-story h3 { margin:0 0 8px; font-size:clamp(22px,3vw,30px); line-height:1.2; } .ds-story h3 a { color:#1c241e; text-decoration-thickness:2px; text-underline-offset:5px; } .ds-story h3 a:hover { color:#176b2d; } .ds-story h3 a:focus-visible { outline:3px solid #cd191e; outline-offset:3px; } .ds-story p:last-child { max-width:65ch; margin:0; font-size:17px; line-height:1.65; }"
+    },
+    {
+      "name": "Informational Callout",
+      "kind": "custom",
+      "refersTo": "informational-callout",
+      "description": "Orientação complementar sem faixa lateral ou sombra decorativa.",
+      "html": "<aside class=\"ds-callout\"><strong>Para começar hoje</strong><p>Escolha um momento sem pressa e pergunte à criança o que ela mais gosta de fazer online.</p></aside>",
+      "css": ".ds-callout { max-width:65ch; padding:20px 24px; border-radius:8px; background:#f5f7f5; color:#1c241e; font:400 17px/1.65 'Open Sans',Arial,sans-serif; } .ds-callout strong { display:block; margin-bottom:6px; font-weight:700; } .ds-callout p { margin:0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Caderno de orientação do IF",
+    "overview": "O site deve parecer uma publicação educativa mantida por uma instituição pública: claro, humano e criterioso. A identidade institucional aparece com precisão na marca, nas cores e na tipografia; o ritmo editorial aparece na hierarquia, nas margens, nas linhas de leitura e no modo como cada artigo conduz da dúvida à ação prática.",
+    "keyCharacteristics": [
+      "Identidade oficial preservada sem reconstrução da marca.",
+      "Uma única família tipográfica com contraste forte de escala e peso.",
+      "Leitura longa confortável, limitada a 65-75 caracteres por linha.",
+      "Verde institucional como presença de marca e verde escuro como cor funcional acessível.",
+      "Superfícies planas, separação por espaço, tipografia e linhas discretas."
+    ],
+    "rules": [
+      { "name": "Brand/Function Split", "body": "As cores oficiais são normativas para a marca; tons funcionais nunca alteram a logo.", "section": "colors" },
+      { "name": "Contrast", "body": "Texto comum deve alcançar 4,5:1 e componentes visuais, foco e texto grande devem alcançar ao menos 3:1.", "section": "colors" },
+      { "name": "One Family", "body": "Open Sans é a única família do site até autorização institucional diferente.", "section": "typography" },
+      { "name": "Flat by Default", "body": "Se espaço, tipografia ou linha separam um bloco, sombra é proibida.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar a assinatura inteira, proporcional e com ao menos 1 módulo x de espaço livre.",
+      "Do garantir que o símbolo tenha ao menos 30 px.",
+      "Do usar verde funcional escuro em texto interativo e botões com texto branco.",
+      "Do testar contraste, teclado, zoom, leitores de tela e larguras móveis."
+    ],
+    "donts": [
+      "Don't rotacionar, distorcer, recolorir, contornar, emoldurar, estilizar ou reconstruir a marca.",
+      "Don't inverter a logo com filtros CSS.",
+      "Don't usar verde institucional para texto comum sobre branco ou fundo de botão com texto branco.",
+      "Don't usar gradientes, glassmorphism, fundos bege ou grades repetitivas de cartões."
+    ]
+  }
+}
+

@@ -1,0 +1,43 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const links = [
+  { href: '/', label: 'Início', active: currentPath === '/' },
+  { href: '/artigos/', label: 'Artigos', active: currentPath.startsWith('/artigos') },
+  { href: '/temas/', label: 'Temas', active: currentPath.startsWith('/temas') },
+  { href: '/sobre/', label: 'Sobre', active: currentPath.startsWith('/sobre') },
+];
+---
+
+<header class="site-header">
+  <div class="header-inner shell">
+    <a class="brand" href="/" aria-label="Cuidado Digital — página inicial">
+      <img
+        src="/brand/logoif.webp"
+        width="860"
+        height="738"
+        alt="Instituto Federal Goiano"
+        decoding="async"
+        fetchpriority="high"
+      />
+      <span aria-hidden="true">
+        <strong>Cuidado Digital</strong>
+        <small>Projeto de extensão</small>
+      </span>
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        {links.map((link) => (
+          <li>
+            <a href={link.href} aria-current={link.active ? 'page' : undefined}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

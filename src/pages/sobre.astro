@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pillars = [
+  ['Domínio do conhecimento', 'Uso saudável, consciente e seguro de tecnologias por crianças.'],
+  ['Objetivos educacionais', 'Apoiar compreensão, escolhas familiares, diálogo e proteção.'],
+  ['Conhecimento prévio', 'Partir das experiências reais, sem exigir domínio técnico.'],
+  ['Dinâmicas problematizadoras', 'Usar situações cotidianas, perguntas e pequenas ações práticas.'],
+  ['Mediações distribuídas', 'Articular equipe, escola, famílias, materiais e fontes confiáveis.'],
+  ['Avaliação processual', 'Observar compreensão e utilidade por instrumentos separados do site.'],
+  ['Suporte digital', 'Usar o canal para comunicação e o site para organizar e aprofundar.'],
+];
+---
+
+<BaseLayout
+  title="Sobre o projeto"
+  description="Conheça o papel do site e a arquitetura pedagógica do projeto de extensão Cuidado Digital."
+>
+  <header class="page-header shell">
+    <p class="eyebrow">Projeto de Extensão I · IF Goiano</p>
+    <h1>Cuidado digital se constrói com informação, diálogo e acompanhamento.</h1>
+    <p>
+      Esta biblioteca apoia famílias e responsáveis por crianças até o 5º ano a compreender situações do cotidiano digital e agir com mais segurança.
+    </p>
+  </header>
+
+  <section class="section shell project-band" aria-labelledby="papel-titulo">
+    <div>
+      <h2 id="papel-titulo">Um espaço de aprofundamento, não o projeto inteiro.</h2>
+      <p>
+        O canal de comunicação leva orientações breves e links permanentes para os conteúdos. O site reúne teoria, exemplos, ações práticas e fontes na mesma página, reduzindo a perda de contexto durante a leitura no celular.
+      </p>
+    </div>
+    <aside>
+      <strong>O formulário permanece separado.</strong>
+      <p>Dados de avaliação e pesquisa não são coletados por esta biblioteca e nunca devem ser publicados de forma identificável.</p>
+    </aside>
+  </section>
+
+  <section class="section section-tint" aria-labelledby="arquitetura-titulo">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <h2 id="arquitetura-titulo">Sete pilares pedagógicos</h2>
+        </div>
+        <p>A interface materializa principalmente o suporte digital, mas responde aos objetivos definidos pelo conjunto.</p>
+      </div>
+      <ol class="pillar-list">
+        {pillars.map(([title, description]) => (
+          <li><div><strong>{title}</strong><p>{description}</p></div></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+</BaseLayout>

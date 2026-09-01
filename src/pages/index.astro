@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import ArticleList from '../components/ArticleList.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { slugify, sortArticles } from '../lib/content';
+
+const articles = sortArticles((await getCollection('artigos')).filter((article) => !article.data.draft));
+const featured = articles.find((article) => article.data.featured) ?? articles[0];
+const recent = articles.filter((article) => article.id !== featured.id).slice(0, 4);
+const topics = [...new Set(articles.map((article) => article.data.topic))].sort((a, b) =>
+  a.localeCompare(b, 'pt-BR'),
+);
+---
+
+<BaseLayout>
+  <section class="hero" aria-labelledby="titulo-principal">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Projeto de extensão · IF Goiano</p>
+        <h1 id="titulo-principal">Tecnologia faz parte da infância. Orientação também.</h1>
+        <p>Informação confiável para orientar crianças no mundo digital.</p>
+        <a class="button" href="#conteudos-recentes">Explorar conteúdos</a>
+      </div>
+
+      <aside class="hero-feature" aria-labelledby="destaque-titulo">
+        <p class="feature-label">Conteúdo em destaque</p>
+        <h2 id="destaque-titulo">{featured.data.title}</h2>
+        <p>{featured.data.description}</p>
+        <a href={`/artigos/${featured.id}/`}>Ler o conteúdo completo →</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section shell" id="conteudos-recentes" aria-labelledby="recentes-titulo">
+    <div class="section-heading">
+      <div>
+        <h2 id="recentes-titulo">Conteúdos recentes</h2>
+      </div>
+      <a class="text-link" href="/artigos/">Ver todos os artigos →</a>
+    </div>
+    <ArticleList articles={recent} />
+  </section>
+
+  <section class="section section-tint" aria-labelledby="temas-titulo">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <h2 id="temas-titulo">Explore por tema</h2>
+        </div>
+        <p>Comece pela dúvida que está mais próxima da rotina da sua família.</p>
+      </div>
+      <ul class="topic-grid">
+        {topics.map((topic) => (
+          <li><a href={`/temas/#${slugify(topic)}`}>{topic}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section shell project-band" aria-labelledby="projeto-titulo">
+    <div>
+      <h2 id="projeto-titulo">Aprofundamento para famílias, com o cuidado de uma instituição pública.</h2>
+      <p>
+        O Cuidado Digital organiza conteúdos do Projeto de Extensão I do IF Goiano. As orientações
+        breves chegam pelo canal de comunicação; aqui, cada família encontra explicações, ações
+        práticas e fontes para consultar no próprio ritmo.
+      </p>
+      <a class="text-link" href="/sobre/">Conheça a proposta pedagógica →</a>
+    </div>
+    <aside>
+      <strong>Este site não coleta respostas do projeto.</strong>
+      <p>O formulário de pesquisa é um instrumento separado. A biblioteca permanece focada na leitura e no aprofundamento.</p>
+    </aside>
+  </section>
+</BaseLayout>

@@ -1,0 +1,19 @@
+{
+  "name": "cuidado-digital",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "check": "astro check",
+    "build": "npm run check && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.9.10",
+    "@fontsource/open-sans": "5.3.0",
+    "astro": "7.2.10",
+    "typescript": "6.0.3"
+  }
+}
