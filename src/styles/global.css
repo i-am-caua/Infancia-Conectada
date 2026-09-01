@@ -243,6 +243,18 @@ li { overflow-wrap: break-word; }
 .section-heading p { max-width: 38rem; color: var(--muted); }
 .text-link { font-weight: 700; }
 
+.section-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-lg);
+}
+
+.section-action .text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
 .article-list {
   margin: 0;
   padding: 0;

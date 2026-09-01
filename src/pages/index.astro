@@ -36,9 +36,11 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
       <div>
         <h2 id="recentes-titulo">Conteúdos recentes</h2>
       </div>
-      <a class="text-link" href="/artigos/">Ver todos os artigos →</a>
     </div>
     <ArticleList articles={recent} />
+    <div class="section-action">
+      <a class="text-link" href="/artigos/">Ver todos os artigos →</a>
+    </div>
   </section>
 
   <section class="section section-tint" aria-labelledby="temas-titulo">
