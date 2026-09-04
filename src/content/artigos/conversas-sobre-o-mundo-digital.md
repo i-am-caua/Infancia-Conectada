@@ -6,7 +6,7 @@ publishedAt: 2026-08-18
 updatedAt: 2026-08-26
 author: "Equipe Cuidado Digital"
 readingMinutes: 5
-featured: true
+featured: false
 draft: false
 sources:
   - title: "Online privacy checklist for parents — UNICEF Parenting"

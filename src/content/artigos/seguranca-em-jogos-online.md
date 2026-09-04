@@ -6,7 +6,7 @@ publishedAt: 2026-09-04
 updatedAt: 2026-09-04
 author: "Equipe Cuidado Digital"
 readingMinutes: 7
-featured: false
+featured: true
 draft: false
 cover:
   src: "/media/artigos/seguranca-em-jogos-online/capa.webp"
