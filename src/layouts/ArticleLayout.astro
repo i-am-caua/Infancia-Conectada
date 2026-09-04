@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import { formatDate, slugify } from '../lib/content';
 
 interface Props {
@@ -11,7 +12,13 @@ const { article } = Astro.props;
 const { data } = article;
 ---
 
-<BaseLayout title={data.title} description={data.description} pageType="article">
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  pageType="article"
+  socialImage={data.cover?.src}
+  socialImageAlt={data.cover?.alt}
+>
   <article class="article-page">
     <header class="article-header shell-narrow">
       <a class="eyebrow topic-link" href={`/temas/#${slugify(data.topic)}`}>
@@ -39,9 +46,29 @@ const { data } = article;
       </dl>
     </header>
 
+    {data.cover && (
+      <figure class="article-cover shell-narrow">
+        <img
+          src={data.cover.src}
+          alt={data.cover.alt}
+          width={data.cover.width}
+          height={data.cover.height}
+          loading="eager"
+          decoding="async"
+        />
+        {data.cover.caption && <figcaption>{data.cover.caption}</figcaption>}
+      </figure>
+    )}
+
     <div class="article-body prose shell-narrow">
       <slot />
     </div>
+
+    {data.video?.provider === 'youtube' && (
+      <div class="shell-narrow">
+        <YouTubeEmbed id={data.video.id} title={data.video.title} />
+      </div>
+    )}
 
     <footer class="article-footer shell-narrow">
       <section aria-labelledby="fontes-titulo">

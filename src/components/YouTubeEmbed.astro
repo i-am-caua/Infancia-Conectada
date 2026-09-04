@@ -1,0 +1,28 @@
+---
+interface Props {
+  id: string;
+  title: string;
+}
+
+const { id, title } = Astro.props;
+const watchUrl = `https://www.youtube.com/watch?v=${id}`;
+const embedUrl = `https://www.youtube-nocookie.com/embed/${id}`;
+---
+
+<section class="video-embed" aria-labelledby="video-titulo">
+  <h2 id="video-titulo">Vídeo para continuar a conversa</h2>
+  <div class="video-frame">
+    <iframe
+      src={embedUrl}
+      title={title}
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p class="video-embed-note">
+    Ao reproduzir, o vídeo é carregado pelo YouTube.
+    <a href={watchUrl} target="_blank" rel="noreferrer">Assistir no YouTube (abre em nova aba)</a>.
+  </p>
+</section>

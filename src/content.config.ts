@@ -14,6 +14,22 @@ const artigos = defineCollection({
     readingMinutes: z.number().int().positive(),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
+    cover: z
+      .object({
+        src: z.string(),
+        alt: z.string(),
+        width: z.number().int().positive(),
+        height: z.number().int().positive(),
+        caption: z.string().optional(),
+      })
+      .optional(),
+    video: z
+      .object({
+        provider: z.literal('youtube'),
+        id: z.string().regex(/^[A-Za-z0-9_-]{11}$/),
+        title: z.string(),
+      })
+      .optional(),
     sources: z.array(
       z.object({
         title: z.string(),

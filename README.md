@@ -38,6 +38,30 @@ O projeto omite URLs canônicas quando `SITE_URL` não está definida, evitando 
 
 Para publicar um novo texto, duplique um arquivo de `src/content/artigos/`, mantenha os campos do cabeçalho e escreva o conteúdo em Markdown. O endereço público será derivado do nome do arquivo; por isso, não renomeie um artigo depois de compartilhar seu link.
 
+### Imagens e vídeos nos artigos
+
+O arquivo [`seguranca-em-jogos-online.md`](./src/content/artigos/seguranca-em-jogos-online.md) é um exemplo completo para a equipe copiar. Ele mostra texto, listas, destaque, fontes, imagem de capa e vídeo do YouTube. Para usar uma imagem, coloque o arquivo em `public/media/artigos/nome-do-artigo/` e informe os dados no cabeçalho:
+
+```yaml
+cover:
+  src: "/media/artigos/nome-do-artigo/capa.webp"
+  alt: "Descrição objetiva da imagem para quem não a vê"
+  width: 1536
+  height: 1024
+  caption: "Legenda opcional."
+```
+
+Para incorporar um vídeo do YouTube, copie apenas o código de 11 caracteres que vem depois de `v=` na URL e informe-o assim:
+
+```yaml
+video:
+  provider: "youtube"
+  id: "kUyQI0USNSY"
+  title: "Título claro que descreve o vídeo"
+```
+
+O vídeo aparecerá dentro do artigo, terá carregamento adiado e também oferecerá um link para assistir diretamente no YouTube. Informe no texto quando o material estiver em outro idioma e inclua a página do vídeo entre as fontes. Use imagens e vídeos que tenham autorização de uso, não exponham crianças ou dados pessoais e tenham texto alternativo útil.
+
 ## Organização do repositório
 
 ```text
