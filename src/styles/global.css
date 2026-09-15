@@ -211,6 +211,7 @@ li { overflow-wrap: break-word; }
 .button:active { color: var(--background); transform: translateY(1px); }
 
 .hero-feature {
+  --focus: var(--ink);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -219,10 +220,18 @@ li { overflow-wrap: break-word; }
   background: var(--brand-green);
 }
 
-.hero-feature .feature-label { margin-bottom: auto; color: var(--ink); font-size: var(--text-label); font-weight: 600; }
+.hero-feature .feature-label { margin: 0 0 auto; color: var(--ink); font-size: var(--text-label); font-weight: 600; }
+.hero-feature .feature-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+.hero-feature .feature-cover + h2 { margin-top: 1.5rem; }
 .hero-feature h2 { margin-top: 3rem; font-size: var(--text-title); }
 .hero-feature p { margin-top: 1rem; font-size: var(--text-body); }
-.hero-feature a { align-self: flex-start; margin-top: 1.5rem; color: var(--ink); font-weight: 700; }
+.hero-feature a { display: inline-flex; align-items: center; align-self: flex-start; min-height: 2.75rem; margin-top: 1.5rem; color: var(--ink); font-weight: 700; }
 
 .section { padding-block: clamp(3rem, 8vw, 4.5rem); }
 .section-tint { background: var(--surface-tint); }
@@ -434,9 +443,14 @@ li { overflow-wrap: break-word; }
   .site-header nav ul { min-width: max-content; }
   .site-header nav a { padding-inline: 0.75rem; }
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-copy { padding: 3rem max(1rem, calc((100vw - 74rem) / 2)); }
+  .hero-copy {
+    min-height: calc(100vh - var(--home-header-height, 0px));
+    min-height: calc(100svh - var(--home-header-height, 0px));
+    padding: 3rem max(1rem, calc((100vw - 74rem) / 2));
+  }
   .hero-feature { min-height: auto; padding: 2rem max(1rem, calc((100vw - 74rem) / 2)); }
-  .hero-feature .feature-label { margin-bottom: 2rem; }
+  .hero-feature .feature-label { margin-bottom: 0; }
+  .hero-feature .feature-cover { max-width: 36rem; align-self: center; }
   .hero-feature h2 { margin-top: 0; }
   .topic-grid { grid-template-columns: 1fr 1fr; }
 }

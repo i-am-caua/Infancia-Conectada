@@ -13,6 +13,18 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
 ---
 
 <BaseLayout>
+  <script is:inline>
+    // Keep the mobile introduction within one screen, including the real header height.
+    (() => {
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+      const updateHeight = () => document.documentElement.style.setProperty(
+        '--home-header-height', `${header.getBoundingClientRect().height}px`,
+      );
+      updateHeight();
+      new ResizeObserver(updateHeight).observe(header);
+    })();
+  </script>
   <section class="hero" aria-labelledby="titulo-principal">
     <div class:list={['hero-grid', { 'hero-grid-empty': !featured }]}>
       <div class="hero-copy">
@@ -24,6 +36,14 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
 
       {featured && <aside class="hero-feature" aria-labelledby="destaque-titulo">
         <p class="feature-label">Conteúdo em destaque</p>
+        {featured.data.cover && <img
+          class="feature-cover"
+          src={featured.data.cover.src}
+          alt={featured.data.cover.alt}
+          width={featured.data.cover.width}
+          height={featured.data.cover.height}
+          decoding="async"
+        />}
         <h2 id="destaque-titulo">{featured.data.title}</h2>
         <p>{featured.data.description}</p>
         <a href={`/artigos/${featured.id}/`}>Ler o conteúdo completo →</a>
