@@ -12,7 +12,7 @@ const articles = sortArticles((await getCollection('artigos')).filter((article) 
   description="Conteúdos práticos para famílias sobre segurança, diálogo e bem-estar no uso de tecnologias."
 >
   <header class="page-header shell">
-    <p class="eyebrow">Biblioteca Infância Conectada</p>
+    <p class="eyebrow">Biblioteca Cuidado Digital</p>
     <h1>Orientações para ler, conversar e colocar em prática.</h1>
     <p>
       Cada artigo parte de uma situação cotidiana, explica por que ela importa e termina com uma ação possível para a família.
@@ -27,7 +27,7 @@ const articles = sortArticles((await getCollection('artigos')).filter((article) 
     {articles.length > 0 ? <ArticleList articles={articles} /> : (
       <div class="prose shell-narrow" style="margin-inline: 0">
         <p>Estamos preparando nosso primeiro artigo. Em breve, você encontrará aqui orientações para o dia a dia da sua família.</p>
-        <p><a href="/sobre/">Conheça o Infância Conectada</a></p>
+        <p><a href="/sobre/">Conheça o Cuidado Digital</a></p>
       </div>
     )}
   </section>

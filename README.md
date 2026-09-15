@@ -1,4 +1,4 @@
-# Infância Conectada
+# Cuidado Digital
 
 Site editorial do **Projeto de Extensão I do IF Goiano**, criado para ajudar famílias e responsáveis a orientar crianças no uso saudável, consciente e seguro das tecnologias.
 
