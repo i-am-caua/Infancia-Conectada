@@ -28,6 +28,12 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
   <section class="hero" aria-labelledby="titulo-principal">
     <div class:list={['hero-grid', { 'hero-grid-empty': !featured }]}>
       <div class="hero-copy">
+        <div class="hero-message">
+          <p class="eyebrow">Projeto de extensão · IF Goiano</p>
+          <h1 id="titulo-principal">Tecnologia faz parte da infância. Orientação também.</h1>
+          <p>Informação confiável para orientar crianças no mundo digital.</p>
+          <a class="button" href={recent.length > 0 || !featured ? '#conteudos-recentes' : '/artigos/'}>Explorar conteúdos</a>
+        </div>
         <ul class="hero-principles" aria-label="Cuidados que orientam o projeto">
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 1-8 8H5l-3 3V11a9 9 0 0 1 18 0Z" /><path d="M7 10h8M7 14h5" /></svg>
@@ -42,12 +48,6 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
             <span>Equilíbrio</span>
           </li>
         </ul>
-        <div class="hero-message">
-        <p class="eyebrow">Projeto de extensão · IF Goiano</p>
-        <h1 id="titulo-principal">Tecnologia faz parte da infância. Orientação também.</h1>
-        <p>Informação confiável para orientar crianças no mundo digital.</p>
-        <a class="button" href={recent.length > 0 || !featured ? '#conteudos-recentes' : '/artigos/'}>Explorar conteúdos</a>
-        </div>
         <a class="hero-scroll" href={featured ? '#conteudo-em-destaque' : '#conteudos-recentes'}>
           <span>{featured ? 'Conheça o conteúdo em destaque' : 'Veja os conteúdos do projeto'}</span>
           <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16m-6-6 6 6 6-6" /></svg>
