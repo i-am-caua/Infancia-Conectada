@@ -13,7 +13,7 @@ const groups = Object.entries(
 ).sort(([first], [second]) => first.localeCompare(second, 'pt-BR'));
 ---
 
-<BaseLayout title="Temas" description="Explore os conteúdos do Cuidado Digital por assunto.">
+<BaseLayout title="Temas" description="Explore os conteúdos do Infância Conectada por assunto.">
   <header class="page-header shell">
     <p class="eyebrow">Navegação por assunto</p>
     <h1>Comece pela pergunta que faz sentido agora.</h1>
@@ -21,6 +21,12 @@ const groups = Object.entries(
   </header>
 
   <div class="section shell topics-directory">
+    {groups.length === 0 && (
+      <div class="prose shell-narrow" style="margin-inline: 0">
+        <p>Os temas aparecerão aqui conforme os primeiros artigos forem publicados.</p>
+        <p><a href="/sobre/">Conheça o Infância Conectada</a></p>
+      </div>
+    )}
     {groups.map(([topic, topicArticles]) => (
       <section class="topic-section" id={slugify(topic)} aria-labelledby={`${slugify(topic)}-titulo`}>
         <h2 id={`${slugify(topic)}-titulo`}>{topic}</h2>

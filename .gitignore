@@ -4,3 +4,17 @@ dist/
 *.log
 .DS_Store
 Thumbs.db
+
+# Documentação e ferramentas internas (mantidas apenas localmente)
+docs/
+AGENTS.md
+DESIGN.md
+PRODUCT.md
+.impeccable/
+tmp/
+
+# Configuração local e credenciais
+.env
+.env.*
+!.env.example
+.vercel/

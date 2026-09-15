@@ -6,7 +6,7 @@ import { slugify, sortArticles } from '../lib/content';
 
 const articles = sortArticles((await getCollection('artigos')).filter((article) => !article.data.draft));
 const featured = articles.find((article) => article.data.featured) ?? articles[0];
-const recent = articles.filter((article) => article.id !== featured.id).slice(0, 4);
+const recent = articles.filter((article) => article.id !== featured?.id).slice(0, 4);
 const topics = [...new Set(articles.map((article) => article.data.topic))].sort((a, b) =>
   a.localeCompare(b, 'pt-BR'),
 );
@@ -14,36 +14,38 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
 
 <BaseLayout>
   <section class="hero" aria-labelledby="titulo-principal">
-    <div class="hero-grid">
+    <div class:list={['hero-grid', { 'hero-grid-empty': !featured }]}>
       <div class="hero-copy">
         <p class="eyebrow">Projeto de extensão · IF Goiano</p>
         <h1 id="titulo-principal">Tecnologia faz parte da infância. Orientação também.</h1>
         <p>Informação confiável para orientar crianças no mundo digital.</p>
-        <a class="button" href="#conteudos-recentes">Explorar conteúdos</a>
+        <a class="button" href={recent.length > 0 || !featured ? '#conteudos-recentes' : '/artigos/'}>Explorar conteúdos</a>
       </div>
 
-      <aside class="hero-feature" aria-labelledby="destaque-titulo">
+      {featured && <aside class="hero-feature" aria-labelledby="destaque-titulo">
         <p class="feature-label">Conteúdo em destaque</p>
         <h2 id="destaque-titulo">{featured.data.title}</h2>
         <p>{featured.data.description}</p>
         <a href={`/artigos/${featured.id}/`}>Ler o conteúdo completo →</a>
-      </aside>
+      </aside>}
     </div>
   </section>
 
-  <section class="section shell" id="conteudos-recentes" aria-labelledby="recentes-titulo">
+  {(recent.length > 0 || !featured) && <section class="section shell" id="conteudos-recentes" aria-labelledby="recentes-titulo">
     <div class="section-heading">
       <div>
         <h2 id="recentes-titulo">Conteúdos recentes</h2>
       </div>
     </div>
-    <ArticleList articles={recent} />
+    {recent.length > 0 ? <ArticleList articles={recent} /> : (
+      <p>Estamos preparando nosso primeiro artigo. Em breve, você encontrará aqui orientações para o dia a dia da sua família.</p>
+    )}
     <div class="section-action">
       <a class="text-link" href="/artigos/">Ver todos os artigos →</a>
     </div>
-  </section>
+  </section>}
 
-  <section class="section section-tint" aria-labelledby="temas-titulo">
+  {topics.length > 0 && <section class="section section-tint" aria-labelledby="temas-titulo">
     <div class="shell">
       <div class="section-heading">
         <div>
@@ -57,13 +59,13 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
         ))}
       </ul>
     </div>
-  </section>
+  </section>}
 
   <section class="section shell project-band" aria-labelledby="projeto-titulo">
     <div>
       <h2 id="projeto-titulo">Aprofundamento para famílias, com o cuidado de uma instituição pública.</h2>
       <p>
-        O Cuidado Digital organiza conteúdos do Projeto de Extensão I do IF Goiano. As orientações
+        O Infância Conectada organiza conteúdos do Projeto de Extensão I do IF Goiano. As orientações
         breves chegam pelo canal de comunicação; aqui, cada família encontra explicações, ações
         práticas e fontes para consultar no próprio ritmo.
       </p>
@@ -71,3 +73,9 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .hero-grid-empty { grid-template-columns: 1fr; }
+  .hero-grid-empty .hero-copy { max-width: 74rem; width: 100%; margin-inline: auto; padding-inline: 1rem; }
+  #conteudos-recentes > p { max-width: 70ch; }
+</style>

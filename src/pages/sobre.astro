@@ -1,19 +1,98 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const students = [
+  'Joel Carlos Assunção Padia',
+  'Cauã Azevedo Santos',
+  'Emily Iyukari Soma Hamano',
+  'Iago Gustavo Silva Alves',
+  'Jurcelino Castilho Dos Santos Neto',
+  'Bruno Alves Mendonça de Abreu Filho',
+  'Kaik Henrique Naves Soares',
+];
 ---
 
 <BaseLayout
-  title="Sobre o projeto"
-  description="A página sobre o projeto Cuidado Digital está em construção."
+  title="Sobre o Infância Conectada"
+  description="Conheça o Infância Conectada: Educação Digital para Responsáveis, sua missão e a equipe do projeto de extensão do IF Goiano."
 >
-  <section class="construction-page shell" aria-labelledby="pagina-em-construcao">
-    <div>
-      <p class="eyebrow">Sobre o projeto</p>
-      <h1 id="pagina-em-construcao">Esta página ainda está sendo construída.</h1>
+  <div class="about-page shell-narrow">
+    <header class="page-header">
+      <p class="eyebrow">Projeto de Extensão I · IF Goiano</p>
+      <h1>Sobre o Infância Conectada</h1>
+      <p>Educação Digital para Responsáveis</p>
+    </header>
+
+    <div class="about-intro prose">
       <p>
-        Em breve, você encontrará aqui mais informações sobre o Cuidado Digital.
+        Vivemos em um mundo onde as telas estão por toda parte, e as crianças estão cada vez
+        mais cedo imersas no ambiente digital. Foi observando esse cenário que nasceu o <strong>Infância Conectada: Educação Digital para Responsáveis.</strong>
       </p>
-      <a class="button" href="/">Voltar para a página inicial</a>
+      <p>
+        Nós somos um projeto de extensão criado com um propósito claro: ser uma ponte de
+        conhecimento e apoio para pais, mães, educadores e responsáveis. Sabemos que mediar
+        a relação das crianças com a tecnologia pode ser desafiador, por isso, nosso foco é
+        traduzir a complexidade do mundo virtual em práticas seguras, saudáveis e conscientes
+        para o dia a dia.
+      </p>
     </div>
-  </section>
+
+    <section class="about-section prose" aria-labelledby="nossa-missao">
+      <h2 id="nossa-missao">Nossa Missão</h2>
+      <p>
+        Nosso objetivo principal é capacitar os responsáveis para que eles possam guiar as
+        crianças no ambiente online. Acreditamos que a tecnologia, quando bem utilizada, é
+        uma ferramenta incrível de aprendizado. Para isso, trabalhamos para:
+      </p>
+      <ul>
+        <li>
+          Conscientizar sobre os riscos do mundo digital (como superexposição, acesso a
+          conteúdos inadequados e cyberbullying — intimidação e agressões repetidas pela internet).
+        </li>
+        <li>Orientar sobre o uso saudável das telas e o equilíbrio com as atividades offline (fora das telas).</li>
+        <li>Oferecer ferramentas práticas para a configuração de controle parental e privacidade.</li>
+      </ul>
+    </section>
+
+    <section class="about-section prose" aria-labelledby="quem-somos">
+      <h2 id="quem-somos">Quem Somos</h2>
+      <p>
+        O Infância Conectada é movido pela dedicação de estudantes e pesquisadores apaixonados
+        por tecnologia, educação e responsabilidade social. Nossa equipe é formada por:
+      </p>
+      <div class="team-group">
+        <h3>Orientador</h3>
+        <p class="team-advisor">Cleon Xavier Júnior Pereira</p>
+      </div>
+      <div class="team-group">
+        <h3>Alunos</h3>
+        <ul class="team-list" role="list">
+          {students.map((student) => <li>{student}</li>)}
+        </ul>
+      </div>
+      <p>
+        Juntos, unimos nossos conhecimentos para construir uma internet mais segura,
+        começando por quem mais importa: nossas crianças.
+      </p>
+    </section>
+
+    <div class="about-next">
+      <p>Encontre orientações para levar essa conversa para o dia a dia da sua família.</p>
+      <a class="button" href="/artigos/">Explorar os artigos</a>
+    </div>
+  </div>
 </BaseLayout>
+
+<style>
+  .about-page { padding-bottom: var(--space-3xl); }
+  .about-intro { padding-block: var(--space-2xl); }
+  .about-section { padding-block: var(--space-2xl); border-top: 1px solid var(--line); }
+  .about-section > h2 { margin-top: 0; font-size: var(--text-headline); }
+  .team-group h3 { margin-top: 0; color: var(--action-green-deep); }
+  .team-group { padding-top: var(--space-sm); }
+  .team-advisor { margin-top: var(--space-sm); font-weight: 600; }
+  .team-list { margin-bottom: 0; padding: 0; list-style: none; }
+  .team-list li { padding-block: var(--space-sm); border-bottom: 1px solid var(--line); }
+  .team-list li + li { margin-top: 0; }
+  .about-next { padding: var(--space-lg); background: var(--surface-tint); border-radius: 8px; }
+</style>
