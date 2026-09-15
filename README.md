@@ -28,7 +28,7 @@ O endereço padrão já gera links canônicos e metadados absolutos de compartil
 
 ## Artigos
 
-A biblioteca começa vazia, pronta para o primeiro conteúdo. As páginas inicial, Artigos e Temas apresentam mensagens enquanto não houver publicações.
+O primeiro artigo é **Family Link: primeiros passos para cuidar juntos**, disponível em `/artigos/family-link-primeiros-passos/`. As páginas inicial, Artigos e Temas se atualizam a partir dos conteúdos publicados e apresentam mensagens quando a biblioteca está vazia.
 
 Crie os artigos em `src/content/artigos/`, usando Markdown e os campos definidos em `src/content.config.ts`: título, descrição, tema, autoria, datas, tempo de leitura e fontes. Registre também o planejamento pedagógico durante a preparação do conteúdo. Imagens de capa e vídeos são opcionais. Artigos com `draft: true` não são publicados.
 
