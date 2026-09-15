@@ -181,7 +181,7 @@ li { overflow-wrap: break-word; }
 
 .hero h1 { max-width: 15ch; font-size: var(--text-display); line-height: 1.05; }
 
-.hero-copy > p:not(.eyebrow) {
+.hero-copy p:not(.eyebrow) {
   max-width: 41rem;
   margin-top: 1.5rem;
   color: var(--muted);

@@ -28,13 +28,33 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
   <section class="hero" aria-labelledby="titulo-principal">
     <div class:list={['hero-grid', { 'hero-grid-empty': !featured }]}>
       <div class="hero-copy">
+        <ul class="hero-principles" aria-label="Cuidados que orientam o projeto">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 1-8 8H5l-3 3V11a9 9 0 0 1 18 0Z" /><path d="M7 10h8M7 14h5" /></svg>
+            <span>Diálogo</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 3v6c0 5-8 11-8 11S4 16 4 11V5l8-3Z" /><path d="m8 11 3 3 5-5" /></svg>
+            <span>Proteção</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+            <span>Equilíbrio</span>
+          </li>
+        </ul>
+        <div class="hero-message">
         <p class="eyebrow">Projeto de extensão · IF Goiano</p>
         <h1 id="titulo-principal">Tecnologia faz parte da infância. Orientação também.</h1>
         <p>Informação confiável para orientar crianças no mundo digital.</p>
         <a class="button" href={recent.length > 0 || !featured ? '#conteudos-recentes' : '/artigos/'}>Explorar conteúdos</a>
+        </div>
+        <a class="hero-scroll" href={featured ? '#conteudo-em-destaque' : '#conteudos-recentes'}>
+          <span>{featured ? 'Conheça o conteúdo em destaque' : 'Veja os conteúdos do projeto'}</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16m-6-6 6 6 6-6" /></svg>
+        </a>
       </div>
 
-      {featured && <aside class="hero-feature" aria-labelledby="destaque-titulo">
+      {featured && <aside class="hero-feature" id="conteudo-em-destaque" aria-labelledby="destaque-titulo">
         <p class="feature-label">Conteúdo em destaque</p>
         {featured.data.cover && <img
           class="feature-cover"
@@ -95,6 +115,51 @@ const topics = [...new Set(articles.map((article) => article.data.topic))].sort(
 </BaseLayout>
 
 <style>
+  .hero-principles,
+  .hero-scroll { display: none; }
+  .hero-message { display: contents; }
+
+  @media (max-width: 54rem) {
+    .hero-copy {
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding-block: 2rem 1.25rem;
+    }
+    .hero-message { display: block; width: 100%; }
+    .hero-principles {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      max-width: 26rem;
+      margin: 0;
+      padding: 0 0 1.5rem;
+      border-bottom: 1px solid var(--line);
+      list-style: none;
+      color: var(--action-green);
+    }
+    .hero-principles li { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.8125rem; font-weight: 600; }
+    .hero-principles svg { flex-shrink: 0; width: 2rem; height: 2rem; }
+    .hero h1 { max-width: 18ch; font-size: clamp(2.5rem, 10vw, 3.25rem); }
+    .hero-scroll {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      min-height: 2.75rem;
+      padding-block: 0.5rem;
+      color: var(--action-green);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .hero-scroll span { text-decoration: underline; text-underline-offset: 0.2em; }
+    .hero-scroll svg { flex-shrink: 0; width: 1.5rem; height: 1.5rem; }
+  }
+  @media (max-width: 22rem) {
+    .hero-principles { gap: 0.5rem; }
+  }
   .hero-grid-empty { grid-template-columns: 1fr; }
   .hero-grid-empty .hero-copy { max-width: 74rem; width: 100%; margin-inline: auto; padding-inline: 1rem; }
   #conteudos-recentes > p { max-width: 70ch; }
