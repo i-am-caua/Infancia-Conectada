@@ -29,6 +29,7 @@ const artigos = defineCollection({
         // Sem ID, o artigo mostra o aviso de vídeo em breve.
         id: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(),
         title: z.string(),
+        format: z.enum(['standard', 'shorts']).default('standard'),
       })
       .optional(),
     sources: z.array(

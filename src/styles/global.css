@@ -441,6 +441,7 @@ li { overflow-wrap: break-word; }
 .video-embed h2 { font-size: var(--text-title); }
 .video-frame { position: relative; width: 100%; margin-top: var(--space-lg); overflow: hidden; aspect-ratio: 16 / 9; min-height: 200px; background: var(--ink); }
 .video-frame iframe { position: absolute; width: 100%; height: 100%; border: 0; }
+.video-frame-shorts { max-width: 22.5rem; margin-inline: auto; aspect-ratio: 9 / 16; }
 .video-pending { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; padding: clamp(1rem, 4vw, 2rem); min-height: 15rem; height: auto; text-align: center; background: var(--action-green-deep); color: var(--background); }
 .video-pending > svg { flex-shrink: 0; }
 .video-pending > p { max-width: 38ch; font-size: var(--text-label); }

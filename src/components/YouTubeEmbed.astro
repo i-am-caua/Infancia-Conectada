@@ -2,10 +2,13 @@
 interface Props {
   id?: string;
   title: string;
+  format?: 'standard' | 'shorts';
 }
 
-const { id, title } = Astro.props;
-const watchUrl = id ? `https://www.youtube.com/watch?v=${id}` : undefined;
+const { id, title, format = 'standard' } = Astro.props;
+const watchUrl = id
+  ? format === 'shorts' ? `https://www.youtube.com/shorts/${id}` : `https://www.youtube.com/watch?v=${id}`
+  : undefined;
 const embedUrl = id ? `https://www.youtube-nocookie.com/embed/${id}?hl=pt-BR&playsinline=1` : undefined;
 ---
 
@@ -13,7 +16,7 @@ const embedUrl = id ? `https://www.youtube-nocookie.com/embed/${id}?hl=pt-BR&pla
   <h2 id="video-titulo">Vídeo para continuar a conversa</h2>
   {embedUrl ? (
     <>
-      <div class="video-frame">
+      <div class:list={['video-frame', { 'video-frame-shorts': format === 'shorts' }]}>
         <iframe
           src={embedUrl}
           title={title}
@@ -25,7 +28,7 @@ const embedUrl = id ? `https://www.youtube-nocookie.com/embed/${id}?hl=pt-BR&pla
       </div>
       <p class="video-embed-note">
         Este player é fornecido pelo YouTube.
-        <a href={watchUrl} target="_blank" rel="noreferrer">Assistir no YouTube (abre em nova aba)</a>.
+        <a href={watchUrl} target="_blank" rel="noreferrer">Assistir no YouTube (abre em nova aba)</a>
       </p>
     </>
   ) : (

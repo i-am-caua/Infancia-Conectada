@@ -10,9 +10,9 @@ featured: true
 draft: false
 video:
   provider: youtube
-  title: "Google Family Link | Cuidado Digital"
-  # Vídeo final do grupo: adicionar id com os 11 caracteres do link quando publicado.
-  # A ausência do id mantém o aviso de vídeo em breve, sem carregar um player vazio.
+  id: "WeAAOmvkKLo"
+  format: shorts
+  title: "Como configurar o Google Family Link | Cuidado Digital"
 cover:
   src: "/media/artigos/family-link-primeiros-passos/capa.webp"
   alt: "O aparelho do responsável, Android ou iPhone, se conecta à supervisão do Android compatível da criança."
@@ -113,7 +113,7 @@ Você não precisa configurar tudo de uma vez. Comece pela conta e pela conexão
 
 Quando aparecer um caminho como **Controles → Google Play**, a seta quer dizer: toque em **Controles** e, depois, em **Google Play**.
 
-Os prints com marcação de tempo vêm de uma gravação de apoio da equipe. Esses tempos não correspondem necessariamente ao vídeo final do Cuidado Digital, que terá seu espaço ao fim do artigo.
+Os prints com marcação de tempo vêm de uma gravação de apoio da equipe. Esses tempos não correspondem necessariamente ao vídeo final do Cuidado Digital, disponível ao fim do artigo.
 
 **Neste artigo:**
 
