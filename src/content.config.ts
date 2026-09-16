@@ -26,7 +26,8 @@ const artigos = defineCollection({
     video: z
       .object({
         provider: z.literal('youtube'),
-        id: z.string().regex(/^[A-Za-z0-9_-]{11}$/),
+        // Sem ID, o artigo mostra o aviso de vídeo em breve.
+        id: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(),
         title: z.string(),
       })
       .optional(),

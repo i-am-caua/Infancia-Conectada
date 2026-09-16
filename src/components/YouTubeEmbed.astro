@@ -1,28 +1,41 @@
 ---
 interface Props {
-  id: string;
+  id?: string;
   title: string;
 }
 
 const { id, title } = Astro.props;
-const watchUrl = `https://www.youtube.com/watch?v=${id}`;
-const embedUrl = `https://www.youtube-nocookie.com/embed/${id}`;
+const watchUrl = id ? `https://www.youtube.com/watch?v=${id}` : undefined;
+const embedUrl = id ? `https://www.youtube-nocookie.com/embed/${id}?hl=pt-BR&playsinline=1` : undefined;
 ---
 
 <section class="video-embed" aria-labelledby="video-titulo">
   <h2 id="video-titulo">Vídeo para continuar a conversa</h2>
-  <div class="video-frame">
-    <iframe
-      src={embedUrl}
-      title={title}
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
-  </div>
-  <p class="video-embed-note">
-    Ao reproduzir, o vídeo é carregado pelo YouTube.
-    <a href={watchUrl} target="_blank" rel="noreferrer">Assistir no YouTube (abre em nova aba)</a>.
-  </p>
+  {embedUrl ? (
+    <>
+      <div class="video-frame">
+        <iframe
+          src={embedUrl}
+          title={title}
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p class="video-embed-note">
+        Este player é fornecido pelo YouTube.
+        <a href={watchUrl} target="_blank" rel="noreferrer">Assistir no YouTube (abre em nova aba)</a>.
+      </p>
+    </>
+  ) : (
+    <div class="video-frame video-pending">
+      <svg aria-hidden="true" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="M7 5v14M17 5v14M3 10h4M3 14h4M17 10h4M17 14h4" />
+      </svg>
+      <p class="video-pending-title">Vídeo em breve</p>
+      <p>O vídeo do Cuidado Digital estará disponível aqui após a publicação no YouTube.</p>
+    </div>
+  )}
 </section>
