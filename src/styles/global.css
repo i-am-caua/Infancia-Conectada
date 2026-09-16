@@ -400,6 +400,43 @@ li { overflow-wrap: break-word; }
 
 .prose blockquote p { margin: 0; }
 
+.prose .article-screenshot {
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-tint);
+}
+
+.article-screenshot > a {
+  display: block;
+  width: min(100%, 20rem);
+  max-width: 100%;
+  margin-inline: auto;
+  border-radius: 8px;
+}
+
+.article-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 8px;
+}
+
+.article-screenshot-wide > a { width: min(100%, 26rem); }
+.article-screenshot-landscape > a { width: min(100%, 40rem); }
+.screenshot-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.screenshot-steps-stack { grid-template-columns: 1fr; }
+.screenshot-step { min-width: 0; }
+.screenshot-step-label { margin-bottom: 0.75rem; font-weight: 700; font-size: var(--text-label); }
+.screenshot-step > a { display: block; width: min(100%, 20rem); margin-inline: auto; border-radius: 8px; }
+.screenshot-steps-stack .screenshot-step > a { width: min(100%, 40rem); }
+.article-screenshot-readable .screenshot-step > a { width: min(100%, 26rem); }
+.article-screenshot figcaption { margin-top: 1rem; font-size: var(--text-label); line-height: 1.6; }
+.screenshot-source { display: block; margin-top: 0.5rem; color: var(--muted); }
+.prose [id] { scroll-margin-top: 1.5rem; }
+
 .video-embed { padding: var(--space-xl); background: var(--surface-tint); border-top: 2px solid var(--brand-green); }
 .video-embed h2 { font-size: var(--text-title); }
 .video-frame { position: relative; margin-top: var(--space-lg); overflow: hidden; aspect-ratio: 16 / 9; background: var(--ink); }
@@ -456,6 +493,7 @@ li { overflow-wrap: break-word; }
 }
 
 @media (max-width: 40rem) {
+  .screenshot-steps { grid-template-columns: 1fr; gap: 1.5rem; }
   .brand span { padding-left: 1rem; }
   .section-heading { align-items: flex-start; flex-direction: column; }
   .article-list > li { grid-template-columns: minmax(0, 1fr) 2.75rem; gap: 0.75rem; }
@@ -485,4 +523,7 @@ li { overflow-wrap: break-word; }
   .skip-link { display: none; }
   body { color: #000; font-size: 12pt; }
   a { color: #000; }
+  .prose .article-screenshot { break-inside: avoid; background: #fff; }
+  .article-screenshot img { max-height: 14cm; width: auto; object-fit: contain; }
+  .prose h2, .prose h3, .prose h4 { break-after: avoid; }
 }
