@@ -26,7 +26,17 @@ npm run dev
 
 O endereço padrão já gera links canônicos e metadados absolutos de compartilhamento. Para mudar o domínio, configure `SITE_URL` em Settings → Environment Variables, no ambiente Production, com a URL completa incluindo `https://`, e faça um novo deploy. O site é estático e não precisa de adaptador da Vercel.
 
+### Autoria dos commits e acesso ao deploy
+
+Se aparecer `Git author must have access to the project on Vercel`, confira o acesso do autor à equipe e a conexão da conta GitHub na Vercel. Esse bloqueio é de permissão, não do build do Astro.
+
+Um novo commit do responsável com acesso, incluindo as alterações anteriores, pode iniciar uma nova publicação. Preserve a autoria dos colaboradores: não altere seus commits nem configure o computador deles com a identidade de outra pessoa. Para permitir deploys diretos do colaborador em repositório privado, configure a participação na equipe em um plano compatível; o Hobby não oferece colaboração em repositórios privados.
+
+Referência: [colaboração e autoria na Vercel](https://vercel.com/docs/deployments/troubleshoot-project-collaboration).
+
 ## Artigos
+
+`src/pages/artigos/index.astro` gera a biblioteca em `/artigos/` e continua necessário mesmo com artigos publicados. Cada artigo individual é gerado pela rota `src/pages/artigos/[...id].astro`; a mensagem de preparação só aparece quando não há artigos publicados.
 
 O primeiro artigo é **Family Link: primeiros passos para cuidar juntos**, disponível em `/artigos/family-link-primeiros-passos/`. As páginas inicial, Artigos e Temas se atualizam a partir dos conteúdos publicados e apresentam mensagens quando a biblioteca está vazia.
 

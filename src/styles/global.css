@@ -211,16 +211,16 @@ li { overflow-wrap: break-word; }
 .button:active { color: var(--background); transform: translateY(1px); }
 
 .hero-feature {
-  --focus: var(--ink);
+  --focus: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: clamp(2rem, 5vw, 3rem);
-  color: var(--ink);
+  color: #fff;
   background: var(--brand-green);
 }
 
-.hero-feature .feature-label { margin: 0 0 auto; color: var(--ink); font-size: var(--text-label); font-weight: 600; }
+.hero-feature .feature-label { margin: 0 0 auto; color: inherit; font-size: var(--text-label); font-weight: 600; }
 .hero-feature .feature-cover {
   display: block;
   width: 100%;
@@ -231,7 +231,7 @@ li { overflow-wrap: break-word; }
 .hero-feature .feature-cover + h2 { margin-top: 1.5rem; }
 .hero-feature h2 { margin-top: 3rem; font-size: var(--text-title); }
 .hero-feature p { margin-top: 1rem; font-size: var(--text-body); }
-.hero-feature a { display: inline-flex; align-items: center; align-self: flex-start; min-height: 2.75rem; margin-top: 1.5rem; color: var(--ink); font-weight: 700; }
+.hero-feature a { display: inline-flex; align-items: center; align-self: flex-start; min-height: 2.75rem; margin-top: 1.5rem; color: inherit; font-weight: 700; }
 
 .section { padding-block: clamp(3rem, 8vw, 4.5rem); }
 .section-tint { background: var(--surface-tint); }
