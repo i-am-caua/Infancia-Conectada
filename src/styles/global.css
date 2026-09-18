@@ -113,7 +113,7 @@ li { overflow-wrap: break-word; }
 }
 
 .brand:hover { color: var(--ink); }
-.brand img { width: 5.25rem; height: auto; object-fit: contain; }
+.brand img { width: 4.25rem; height: auto; object-fit: contain; }
 
 .brand span {
   display: grid;
