@@ -231,7 +231,7 @@ li { overflow-wrap: break-word; }
 .hero-feature .feature-cover + h2 { margin-top: 1.5rem; }
 .hero-feature h2 { margin-top: 3rem; font-size: var(--text-title); }
 .hero-feature p { margin-top: 1rem; font-size: var(--text-body); }
-.hero-feature a { display: inline-flex; align-items: center; align-self: flex-start; min-height: 2.75rem; margin-top: 1.5rem; color: inherit; font-weight: 700; }
+.hero-feature a { display: inline-flex; align-items: center; align-self: flex-start; min-height: 2.75rem; margin-top: 1.5rem; color: var(--brand-red); font-weight: 700; }
 
 .section { padding-block: clamp(3rem, 8vw, 4.5rem); }
 .section-tint { background: var(--surface-tint); }
