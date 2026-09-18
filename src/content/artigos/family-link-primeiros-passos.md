@@ -14,11 +14,12 @@ video:
   format: shorts
   title: "Como configurar o Google Family Link | Cuidado Digital"
 cover:
-  src: "/media/artigos/family-link-primeiros-passos/capa.webp"
-  alt: "O aparelho do responsável, Android ou iPhone, se conecta à supervisão do Android compatível da criança."
-  width: 1536
-  height: 1024
-  caption: "Cada aparelho tem um papel. Ilustração criada com IA para este guia; não representa telas do aplicativo."
+  src: "/media/artigos/family-link-primeiros-passos/capa.svg"
+  socialImage: "/media/artigos/family-link-primeiros-passos/capa-social.png"
+  alt: "Dois celulares conectados por uma linha pontilhada: o do responsável com uma confirmação verde e o da criança com um sinal de adição vermelho."
+  width: 1200
+  height: 720
+  caption: "Cada aparelho tem um papel no cuidado digital. Ilustração conceitual; não representa telas do aplicativo."
 sources:
   - title: "Google Play: exemplo antigo do aviso de bloqueio no aparelho da criança"
     url: "https://play.google.com/store/apps/details?id=com.google.android.apps.kids.familylinkmanager&hl=pt_BR"

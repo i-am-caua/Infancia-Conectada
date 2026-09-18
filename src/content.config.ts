@@ -17,6 +17,7 @@ const artigos = defineCollection({
     cover: z
       .object({
         src: z.string(),
+        socialImage: z.string().optional(),
         alt: z.string(),
         width: z.number().int().positive(),
         height: z.number().int().positive(),

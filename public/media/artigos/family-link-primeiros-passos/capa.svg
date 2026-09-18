@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Cuidar juntos, mesmo em telas diferentes</title>
+  <desc id="description">Dois celulares conectados por uma linha pontilhada. O aparelho do responsável tem um sinal de confirmação verde, e o da criança, um sinal de adição vermelho.</desc>
+
+  <!-- Paleta do Cuidado Digital: verdes institucionais, vermelho e fundo claro. -->
+  <path fill="#f5f7f5" d="M0 0h1200v720H0z"/>
+  <path d="M132 674V408C132 222 283 72 469 72h262c186 0 337 150 337 336v266H132Z" fill="#e4ece1"/>
+  <path d="M338 674V403c0-132 107-239 239-239s239 107 239 239v271H338Z" fill="#d4e1ce"/>
+
+  <!-- Conexão pontilhada entre os aparelhos, atrás dos contornos. -->
+  <path d="M487 353c66 0 95-78 151-58 41 15 49 57 74 65" stroke="#176b2d" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 15"/>
+
+  <!-- Aparelho do responsável. -->
+  <g transform="rotate(-9 403 391)">
+    <rect x="286" y="180" width="234" height="418" rx="36" fill="#125523" opacity=".06" transform="translate(0 10)"/>
+    <rect x="286" y="180" width="234" height="418" rx="36" fill="#fff" stroke="#125523" stroke-width="7"/>
+    <rect x="355" y="201" width="96" height="15" rx="7.5" fill="#125523"/>
+    <circle cx="403" cy="322" r="49" fill="#dcebd2"/>
+    <path d="m381 322 16 17 30-37" stroke="#176b2d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="332" y="407" width="142" height="16" rx="8" fill="#a7bd9c"/>
+    <rect x="332" y="442" width="105" height="13" rx="6.5" fill="#dcebd2"/>
+    <rect x="332" y="496" width="142" height="43" rx="14" fill="#176b2d"/>
+    <rect x="376" y="572" width="54" height="5" rx="2.5" fill="#dce8de"/>
+  </g>
+
+  <!-- Aparelho da criança com o vermelho da marca. -->
+  <g transform="rotate(10 750 437)">
+    <rect x="648" y="264" width="204" height="346" rx="31" fill="#125523" opacity=".06" transform="translate(0 10)"/>
+    <rect x="648" y="264" width="204" height="346" rx="31" fill="#fff" stroke="#125523" stroke-width="7"/>
+    <rect x="708" y="284" width="84" height="13" rx="6.5" fill="#125523"/>
+    <circle cx="750" cy="398" r="46" fill="#f9e3df"/>
+    <path d="M750 378v40m-20-20h40" stroke="#cd191e" stroke-width="7" stroke-linecap="round"/>
+    <rect x="690" y="481" width="120" height="15" rx="7.5" fill="#a7bd9c"/>
+    <rect x="690" y="513" width="87" height="12" rx="6" fill="#dcebd2"/>
+    <rect x="726" y="584" width="48" height="5" rx="2.5" fill="#dce8de"/>
+  </g>
+</svg>

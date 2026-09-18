@@ -16,7 +16,7 @@ const { data } = article;
   title={data.title}
   description={data.description}
   pageType="article"
-  socialImage={data.cover?.src}
+  socialImage={data.cover?.socialImage ?? data.cover?.src}
   socialImageAlt={data.cover?.alt}
 >
   <article class="article-page">
