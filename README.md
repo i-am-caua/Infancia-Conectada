@@ -2,7 +2,7 @@
 
 Site editorial do **Projeto de Extensão I do IF Goiano**, criado para ajudar famílias e responsáveis a orientar crianças no uso saudável, consciente e seguro das tecnologias.
 
-Site público: https://infancia-conectada.vercel.app/
+Site público: https://www.cuidadodigital.social/
 
 ## Desenvolvimento
 
@@ -17,14 +17,22 @@ npm run dev
 - `npm run build`: valida e gera o site estático em `dist/`.
 - `npm run preview`: serve o resultado do build localmente.
 
-## Publicação na Vercel
+## Publicação no GitHub Pages
+
+O fluxo `.github/workflows/deploy.yml` valida, compila e publica o site a cada push na `main`, incluindo commits dos colaboradores. Também pode ser iniciado manualmente em Actions → Deploy to GitHub Pages → Run workflow. Se o build falhar, a publicação anterior permanece disponível.
+
+Em Settings → Pages, a fonte deve ser **GitHub Actions** e o domínio personalizado, **www.cuidadodigital.social**. O Astro usa esse endereço nos links canônicos e nos metadados; como o site usa domínio próprio, não há prefixo `/Infancia-Conectada` nas rotas.
+
+O DNS na Name.com deve apontar `www` por CNAME para `i-am-caua.github.io` e o domínio raiz pelos registros A `185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`. Ative **Enforce HTTPS** no Pages quando o certificado estiver disponível.
+
+## Configuração anterior na Vercel
 
 - Framework Preset: `Astro`.
 - Build Command: `npm run build`.
 - Output Directory: `dist`.
 - Endereço padrão: `https://infancia-conectada.vercel.app`.
 
-O endereço padrão já gera links canônicos e metadados absolutos de compartilhamento. Para mudar o domínio, configure `SITE_URL` em Settings → Environment Variables, no ambiente Production, com a URL completa incluindo `https://`, e faça um novo deploy. O site é estático e não precisa de adaptador da Vercel.
+O site é estático e não precisa de adaptador da Vercel. A variável opcional `SITE_URL` pode substituir o domínio padrão nos links canônicos e metadados de compartilhamento.
 
 ### Autoria dos commits e acesso ao deploy
 
