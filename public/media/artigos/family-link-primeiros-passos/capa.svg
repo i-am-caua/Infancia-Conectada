@@ -2,10 +2,23 @@
   <title id="title">Cuidar juntos, mesmo em telas diferentes</title>
   <desc id="description">Dois celulares conectados por uma linha pontilhada. O aparelho do responsável tem um sinal de confirmação verde, e o da criança, um sinal de adição vermelho.</desc>
 
-  <!-- Paleta do Cuidado Digital: verdes institucionais, vermelho e fundo claro. -->
-  <path fill="#f5f7f5" d="M0 0h1200v720H0z"/>
-  <path d="M132 674V408C132 222 283 72 469 72h262c186 0 337 150 337 336v266H132Z" fill="#e4ece1"/>
-  <path d="M338 674V403c0-132 107-239 239-239s239 107 239 239v271H338Z" fill="#d4e1ce"/>
+  <defs>
+    <linearGradient id="outer-arch" x1="600" y1="72" x2="600" y2="674" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4c9054"/>
+      <stop offset=".55" stop-color="#388044"/>
+      <stop offset="1" stop-color="#176b2d"/>
+    </linearGradient>
+    <linearGradient id="inner-arch" x1="577" y1="164" x2="577" y2="674" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#91ba80"/>
+      <stop offset=".5" stop-color="#71a56b"/>
+      <stop offset="1" stop-color="#176b2d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mesmo verde da área de destaque, com arcos progressivamente mais claros. -->
+  <path fill="#176b2d" d="M0 0h1200v720H0z"/>
+  <path d="M132 674V408C132 222 283 72 469 72h262c186 0 337 150 337 336v266H132Z" fill="url(#outer-arch)"/>
+  <path d="M338 674V403c0-132 107-239 239-239s239 107 239 239v271H338Z" fill="url(#inner-arch)"/>
 
   <!-- Conexão pontilhada entre os aparelhos, atrás dos contornos. -->
   <path d="M487 353c66 0 95-78 151-58 41 15 49 57 74 65" stroke="#176b2d" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 15"/>

@@ -217,7 +217,7 @@ li { overflow-wrap: break-word; }
   justify-content: flex-end;
   padding: clamp(2rem, 5vw, 3rem);
   color: #fff;
-  background: var(--brand-green);
+  background: var(--action-green);
 }
 
 .hero-feature .feature-label { margin: 0 0 auto; color: inherit; font-size: var(--text-label); font-weight: 600; }
