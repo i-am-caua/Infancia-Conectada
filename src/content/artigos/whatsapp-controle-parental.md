@@ -73,7 +73,7 @@ A experiência fica concentrada em mensagens e chamadas, sem Status, Canais ou M
 
 ## Como criar uma conta gerenciada
 
-Ela se destina a menores de 13 anos, ou da idade mínima local. A configuração exige um responsável com 18 anos ou mais. Separe os dois celulares, conectados à internet, com o WhatsApp atualizado e um número para a criança.
+Ela se destina a menores de 13 anos. A configuração exige um responsável com 18 anos ou mais. Separe os dois celulares, conectados à internet, com o WhatsApp atualizado e um número para a criança.
 
 1. **No celular da criança:** baixe o WhatsApp pela loja oficial e toque em **Concordar e continuar**.
 2. Na tela de cadastro, toque nos **três pontinhos**, no canto superior direito, para abrir **Mais opções**. Escolha **Criar uma conta gerenciada por pai, mãe ou responsável**. Esse é o menu do cadastro inicial, não o de uma conta já aberta.
