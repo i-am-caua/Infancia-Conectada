@@ -6,19 +6,20 @@ publishedAt: 2026-09-22
 updatedAt: 2026-09-22
 author: "Equipe Cuidado Digital"
 readingMinutes: 5
-featured: false
+featured: true
 draft: false
 video:
   provider: youtube
-  format: standard
+  id: "14QTXUcv9s4"
+  format: shorts
   title: "Controle parental no WhatsApp | Cuidado Digital"
 cover:
-  src: "/media/artigos/whatsapp-controle-parental/capa.webp"
+  src: "/media/artigos/whatsapp-controle-parental/capa.svg"
   socialImage: "/media/artigos/whatsapp-controle-parental/capa.png"
-  alt: "Exemplo do WhatsApp com avisos ao responsável sobre contatos, grupos e mudanças na conta da criança."
-  width: 1920
-  height: 1080
-  caption: "Imagem de divulgação: WhatsApp/Meta. Exemplo de conta gerenciada; as telas podem variar."
+  alt: "Ilustração de um celular com o símbolo do WhatsApp, um cadeado amarelo e os perfis de um adulto e uma criança, representando o acompanhamento familiar."
+  width: 960
+  height: 560
+  caption: "Ilustração conceitual sobre proteção e acompanhamento familiar no WhatsApp; não representa telas do aplicativo."
 sources:
   - title: "Comunidade /e/OS: imagem do início do cadastro no Android, compartilhada por benjig"
     url: "https://community.e.foundation/t/whatsapp-parental-controls-are-not-available/84504"

@@ -450,6 +450,7 @@ li { overflow-wrap: break-word; }
 .video-embed-note a { display: inline-block; min-height: 2.75rem; padding-top: 0.5rem; font-weight: 700; }
 .article-footer { padding-top: 3rem; border-top: 2px solid var(--ink); }
 .article-footer h2 { font-size: var(--text-title); }
+.article-contact { margin-bottom: var(--space-xl); }
 .source-list { margin: 1.5rem 0 0; padding: 0; list-style: none; }
 
 .source-list li {
