@@ -76,7 +76,7 @@ const { data } = article;
     </div>
 
     <footer class="article-footer shell-narrow">
-      <section aria-labelledby="fontes-titulo">
+      {data.sources.length > 0 && <section aria-labelledby="fontes-titulo">
         <h2 id="fontes-titulo">Fontes e materiais consultados</h2>
         <ul class="source-list">
           {data.sources.map((source) => (
@@ -86,7 +86,7 @@ const { data } = article;
             </li>
           ))}
         </ul>
-      </section>
+      </section>}
       <a class="text-link back-link" href="/artigos/">← Ver todos os artigos</a>
     </footer>
   </article>
