@@ -57,7 +57,10 @@ Seu filho quer conversar com a família pelo WhatsApp — ou já tem uma conta? 
 
 O WhatsApp oferece **contas gerenciadas por responsáveis**, com controles para acompanhar contatos e grupos. A liberação é gradual: a opção pode ainda não aparecer no seu aparelho ou região.
 
-**Vá direto ao que precisa:** [criar uma conta](#como-criar-uma-conta-gerenciada) · [a criança já tem conta](#a-criança-já-tem-conta-e-agora) · [limitar o tempo](#como-limitar-o-tempo-no-whatsapp).
+**Vá direto ao que precisa:** 
+- [criar uma conta](#como-criar-uma-conta-gerenciada)
+- [a criança já tem conta](#a-criança-já-tem-conta-e-agora)
+- [limitar o tempo](#como-limitar-o-tempo-no-whatsapp)
 
 ## O que os responsáveis podem controlar
 

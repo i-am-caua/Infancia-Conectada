@@ -13,7 +13,7 @@ const embedUrl = id ? `https://www.youtube-nocookie.com/embed/${id}?hl=pt-BR&pla
 ---
 
 <section class="video-embed" aria-labelledby="video-titulo">
-  <h2 id="video-titulo">Vídeo para continuar a conversa</h2>
+  <p class="video-embed-title" id="video-titulo">Assista ao vídeo</p>
   {embedUrl ? (
     <>
       <div class:list={['video-frame', { 'video-frame-shorts': format === 'shorts' }]}>

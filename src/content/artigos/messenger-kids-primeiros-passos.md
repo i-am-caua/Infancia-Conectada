@@ -40,7 +40,12 @@ A criança quer mandar mensagens para os avós ou conversar por vídeo com amigo
 
 Depois do nosso [artigo sobre controle parental no WhatsApp](/artigos/whatsapp-controle-parental/), vamos conhecer essa opção e configurar suas principais escolhas em família.
 
-**Vá direto ao que precisa:** [instalação](#como-instalar) · [cadastro](#como-criar-a-conta) · [amizades](#quem-pode-conversar-com-a-criança) · [horários de descanso](#como-configurar-o-modo-de-suspensão) · [mensagens e privacidade](#o-que-o-responsável-pode-acompanhar).
+**Vá direto ao que precisa:** 
+- [instalação](#como-instalar)
+- [cadastro](#como-criar-a-conta)
+- [amizades](#quem-pode-conversar-com-a-criança)
+- [horários de descanso](#como-configurar-o-modo-de-suspensão)
+- [mensagens e privacidade](#o-que-o-responsável-pode-acompanhar).
 
 ## O que é o Messenger Kids
 

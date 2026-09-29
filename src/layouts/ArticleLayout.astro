@@ -60,21 +60,22 @@ const { data } = article;
       </figure>
     )}
 
+    <div class="article-intro shell-narrow">
+      {data.video?.provider === 'youtube' && (
+        <YouTubeEmbed id={data.video.id} title={data.video.title} format={data.video.format} />
+      )}
+      <aside class="article-contact" aria-labelledby="assistencia-titulo">
+        <p class="article-contact-title" id="assistencia-titulo">Precisa de assistência?</p>
+        <p>Tire suas dúvidas pelo WhatsApp:</p>
+        <a class="article-contact-number" href="https://wa.me/556492622927" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp: +55 64 9262-2927 (abre em nova aba)">+55 64 9262-2927</a>
+      </aside>
+    </div>
+
     <div class="article-body prose shell-narrow">
       <slot />
     </div>
 
-    {data.video?.provider === 'youtube' && (
-      <div class="shell-narrow">
-        <YouTubeEmbed id={data.video.id} title={data.video.title} format={data.video.format} />
-      </div>
-    )}
-
     <footer class="article-footer shell-narrow">
-      <p class="article-contact">
-        Em caso de dúvidas, entre em contato pelo WhatsApp:
-        <a href="https://wa.me/556492622927" target="_blank" rel="noopener noreferrer">+55 64 9262-2927</a>.
-      </p>
       <section aria-labelledby="fontes-titulo">
         <h2 id="fontes-titulo">Fontes e materiais consultados</h2>
         <ul class="source-list">
