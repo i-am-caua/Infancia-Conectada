@@ -1,182 +1,305 @@
-﻿---
+---
 title: "Roblox: como configurar o controle parental"
-description: "Aprenda, passo a passo, a acompanhar os jogos e as conversas da criança no Roblox e a definir limites de tempo e compras."
+description: "Um passo a passo com imagens para vincular as contas, conhecer Roblox Kids e Select e combinar jogos, conversas, tempo de uso e compras."
 topic: "Controle parental e supervisão familiar"
-publishedAt: 2026-09-29
-updatedAt: 2026-09-29
+publishedAt: 2026-10-06
+updatedAt: 2026-10-06
 author: "Equipe Cuidado Digital"
-readingMinutes: 8
-featured: false
-draft: true
+readingMinutes: 12
+featured: true
+draft: false
+video:
+  provider: youtube
+  id: "7Qmp1TowjH0"
+  format: standard
+  title: "Roblox: controle parental e acompanhamento da família | Cuidado Digital"
 cover:
   src: "/media/artigos/roblox-controle-parental/capa.svg"
   alt: "Celular com a logo branca do Roblox na tela verde escura, cercado por um controle de videogame, relógio, escudo e balões de conversa com perfis da família."
   width: 1200
   height: 720
   caption: "Jogos, acompanhamento e tempo para outras atividades. Ilustração que representa o cuidado da família; não é uma tela do Roblox."
-sources: []
+sources:
+  - title: "Roblox: contas Kids e Select e proteções por idade"
+    url: "https://en.help.roblox.com/hc/en-us/articles/48163847200532-What-are-Roblox-Kids-and-Roblox-Select"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: lançamento das contas por idade e alcance dos controles"
+    url: "https://about.roblox.com/newsroom/2026/06/age-based-roblox-kids-and-select-accounts-now-globally-available"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: como vincular a conta da criança à do responsável"
+    url: "https://en.help.roblox.com/hc/en-us/articles/30428321333140-Parents-How-to-Link-Your-Child-s-Account"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: visão geral dos controles, jogos e amizades"
+    url: "https://en.help.roblox.com/hc/en-us/articles/30428310121620-Parental-Controls-Overview"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: central de controles parentais e comunicação"
+    url: "https://about.roblox.com/parental-controls"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: classificação dos conteúdos"
+    url: "https://en.help.roblox.com/hc/en-us/articles/8862768451604-Content-Maturity-Labels"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: dúvidas sobre maturidade de conteúdo"
+    url: "https://en.help.roblox.com/hc/en-us/articles/8863284850196-Content-Maturity-FAQ"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: gerenciar o tempo de tela"
+    url: "https://en.help.roblox.com/hc/en-us/articles/30428328969492-Managing-Screen-Time"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: limites mensais de gastos"
+    url: "https://en.help.roblox.com/hc/en-us/articles/4409125091348-Monthly-Spending-Limits"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: notificações de gastos"
+    url: "https://en.help.roblox.com/hc/en-us/articles/4409139163412-Spending-Notifications"
+    accessedAt: "06/10/2026"
+  - title: "Roblox: denunciar comportamentos e conteúdos inadequados"
+    url: "https://en.help.roblox.com/hc/en-us/articles/203312410-How-to-Report-Rule-Violations"
+    accessedAt: "06/10/2026"
 ---
 
-A criança pede mais uma partida no Roblox. Você sabe que ela está jogando, mas quer entender melhor com quem conversa, quais jogos acessa e se pode fazer compras. **Você não precisa saber jogar para começar a acompanhar.**
+A criança pede mais uma partida no Roblox. Você sabe que ela está jogando, mas quer entender com quem conversa, quais jogos acessa e se pode fazer compras. **Você não precisa saber jogar para começar a acompanhar.**
 
-O **controle parental**, chamado de **Controles dos responsáveis** no Roblox, é um conjunto de ajustes que ajuda a família a cuidar desse uso. Com ele, você pode escolher quais jogos a criança acessa, ajustar as permissões de conversa, revisar amizades, limitar o tempo de uso e controlar parte das compras.
-
-Este passo a passo é voltado a responsáveis por crianças menores de 13 anos. Separe um momento para fazer os ajustes junto da criança e explicar o que vocês vão combinar.
+Depois dos nossos guias sobre [Family Link](/artigos/family-link-primeiros-passos/), [WhatsApp](/artigos/whatsapp-controle-parental/) e [Messenger Kids](/artigos/messenger-kids-primeiros-passos/), vamos conhecer os controles do Roblox. A proposta é configurar junto da criança, explicar cada escolha e fazer um teste antes de confiar no ajuste.
 
 **Vá direto ao que precisa:**
 
-- [Vincular as contas](#como-vincular-a-conta-do-responsável)
+- [Entender Roblox Kids e Select](#o-que-são-roblox-kids-e-roblox-select)
+- [Instalar e preparar as contas](#antes-de-começar)
+- [Vincular o responsável](#como-vincular-a-conta-do-responsável)
 - [Escolher e bloquear jogos](#como-escolher-os-jogos-disponíveis)
 - [Revisar conversas e amizades](#como-revisar-conversas-e-amizades)
 - [Definir o tempo de uso](#como-definir-o-tempo-de-uso)
-- [Limitar compras](#como-ajustar-gastos-e-notificações)
-- [Bloquear e denunciar](#se-algo-incomodar-como-pedir-ajuda)
+- [Cuidar das compras](#como-ajustar-gastos-e-notificações)
+- [Testar os ajustes](#façam-um-teste-juntos)
+
+## O que são Roblox Kids e Roblox Select
+
+O **Roblox** é uma plataforma que reúne muitos jogos criados por diferentes desenvolvedores. Dentro dela, a palavra **experiência** também significa um jogo ou espaço que a criança pode visitar.
+
+Segundo o Roblox, as contas são organizadas por idade, com proteções e catálogos próprios:
+
+- **Roblox Kids:** geralmente para crianças de **5 a 8 anos**, com jogos de conteúdo Mínimo ou Leve e comunicação desativada por padrão.
+- **Roblox Select:** geralmente de **9 a 15 anos**, com acesso gradual a conteúdos e recursos de comunicação conforme a idade e as permissões.
+- **Roblox:** para usuários de **16 anos ou mais**, com outras condições de acesso.
+
+**Kids e Select são tipos de conta dentro do Roblox, não aplicativos separados para instalar.** A atribuição considera a idade; durante a transição descrita pela plataforma, a idade informada também pode definir o catálogo enquanto a verificação não é concluída. As regras podem variar por região.
+
+Os jogos dos catálogos infantis passam por uma seleção adicional que inclui requisitos para os criadores e avaliação do conteúdo. Isso ajuda a reduzir riscos, mas não garante que toda interação seja adequada para cada criança. Peça que ela mostre os jogos de que gosta e explique o que faz neles.
+
+**O conjunto completo de controles está disponível até os 12 anos.** A partir dos 13, parte do acompanhamento muda: alguns controles de jogos e comunicação continuam até os 15, mas limites de tempo e gastos definidos pelo adulto não têm o mesmo alcance. Este passo a passo de configuração é voltado principalmente a responsáveis por **crianças menores de 13 anos**.
 
 ## Antes de começar
 
-O Roblox é um aplicativo que reúne muitos jogos. Dentro dele, a palavra **experiência** também é usada para se referir a um jogo ou espaço que a criança pode visitar.
+Separe o aparelho da criança, o acesso à conta dela e o celular ou computador do responsável. O adulto precisa usar **sua própria conta Roblox**, com acesso ao e-mail associado a ela. Conectar essa conta à da criança é o que chamaremos de **vincular as contas**.
 
-Para acompanhar a criança, o adulto precisa ter **sua própria conta Roblox**, separada da conta dela. Depois, é preciso **vincular as contas**: isso significa conectar a conta do responsável à da criança para acessar os controles.
+Se já usam Roblox, mantenham as contas existentes. Não é necessário criar outra conta da criança para seguir o guia. Se ainda vão cadastrar, leiam os termos e informem a data de nascimento correta; ela influencia as proteções disponíveis.
 
-Tenha em mãos:
+### Instale pela loja oficial, se necessário
 
-- o aparelho em que a criança usa o Roblox e o acesso à conta dela;
-- o acesso à sua conta Roblox, se já tiver uma;
-- acesso ao seu e-mail, para abrir o convite de vinculação caso ele seja enviado.
+1. No Android, abra a **Play Store** e procure **Roblox**. No iPhone ou iPad, use a **App Store**.
+2. Confira se o desenvolvedor é **Roblox Corporation** e leia a classificação e as informações da loja.
+3. Se o uso for compatível com as orientações aplicáveis à criança, toque em **Instalar** ou **Obter**. Depois, abra o app e entre na conta correspondente.
 
-O responsável precisa ter pelo menos 18 anos. Durante a configuração, o Roblox pede uma confirmação de idade por documento oficial ou cartão de crédito. Faça essa etapa pelas telas de cadastro e configuração do Roblox. Não envie documentos, senhas ou códigos em conversas com jogadores.
+<figure class="article-screenshot">
+  <a href="/media/artigos/roblox-controle-parental/instalar.webp" target="_blank" rel="noopener" aria-label="Ampliar: Resultado da Play Store para Roblox, com o desenvolvedor Roblox Corporation e o botão Instalar. (abre em outra aba)">
+    <img src="/media/artigos/roblox-controle-parental/instalar.webp" alt="Resultado da Play Store para Roblox, com o desenvolvedor Roblox Corporation e o botão Instalar." width="576" height="517" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Confira o <strong>desenvolvedor</strong>. Na gravação, a loja exibe classificação de 16 anos: leia a classificação do seu aparelho e as orientações antes de decidir pelo uso. Ter uma conta Kids ou Select não altera o aviso da loja.
+    <span class="screenshot-source">Vídeo “1° Instalação do App”, em 0min12s. Recorte da gravação da equipe. Toque na imagem para ampliar.</span>
+  </figcaption>
+</figure>
 
-Confira também se a data de nascimento da criança está correta. Ela é usada para definir as proteções da conta.
+As imagens deste guia vêm das gravações da equipe no Android, feitas em **29/09/2026**. Há etapas no aplicativo e no navegador. A aparência, a tradução e a posição dos botões podem mudar; alguns menus aparecem como **Mais**, **Eu** ou pelo ícone do perfil.
+
+Quando você ler **Configurações → Controles dos responsáveis**, a seta significa: abra Configurações e, depois, Controles dos responsáveis. Faça um cuidado de cada vez, sem precisar ajustar tudo na primeira conversa.
 
 ## Como vincular a conta do responsável
 
-### Comece na conta da criança
+### 1. Envie o pedido pela conta da criança
 
-1. Abra o Roblox e confira se está na conta que a criança usa para jogar.
-2. No celular, toque em **Mais**, no canto inferior direito, e depois em **Configurações**. No computador, as configurações ficam no botão com desenho de uma engrenagem, no canto superior direito.
-3. Toque em **Controles dos responsáveis**.
-4. Escolha **Adicionar responsável** e continue pelas instruções da tela.
+1. Abra o Roblox e confira se está na conta usada pela criança.
+2. Acesse **Mais**, **Eu** ou o menu do perfil e procure **Configurações**. No computador, use a engrenagem.
+3. Abra **Controles dos responsáveis** e toque em **Adicionar responsável**.
+4. Quando solicitado, informe o **e-mail do adulto** que receberá o convite. Confira a digitação antes de enviar.
 
-### Conclua com a conta do adulto
+<figure class="article-screenshot">
+  <a href="/media/artigos/roblox-controle-parental/adicionar-responsavel.webp" target="_blank" rel="noopener" aria-label="Ampliar: Controles dos responsáveis na conta da criança, com o botão Adicionar responsável. (abre em outra aba)">
+    <img src="/media/artigos/roblox-controle-parental/adicionar-responsavel.webp" alt="Controles dos responsáveis na conta da criança, com o botão Adicionar responsável." width="576" height="533" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Esse pedido começa <strong>na conta da criança</strong>. Depois, o adulto continua pelo convite recebido no próprio e-mail.
+    <span class="screenshot-source">Vídeo “3° conectando-responsável-a-conta-da-crianca”, em 1min40s. Recorte da gravação da equipe. Toque na imagem para ampliar.</span>
+  </figcaption>
+</figure>
 
-1. Escolha **Criar conta**, se ainda não tiver uma conta Roblox, ou **Usar conta existente**, para entrar na sua. Não use a conta da criança nesta etapa.
-2. Se receber um convite por e-mail, abra-o. O e-mail cadastrado na sua conta Roblox deve ser o mesmo que recebeu o convite.
-3. Complete a confirmação de idade solicitada pelo Roblox, usando um dos métodos apresentados na tela.
-4. Confira se aparece a conta correta da criança e toque em **Concordar** para conectar as duas contas.
+### 2. Continue pela conta do adulto
 
-**Depois de concluir, faça os próximos ajustes pela sua conta de adulto.** Abra **Configurações**, entre em **Controles dos responsáveis** e selecione a criança. Se você acompanha mais de uma criança, confira o nome antes de mudar qualquer opção.
+Abra o convite no e-mail do responsável. Escolha **Criar conta**, caso ainda não tenha uma, ou **Usar uma conta existente**. Se já tem conta, o e-mail associado a ela deve corresponder ao que recebeu o convite.
 
-Ao longo deste artigo, chamaremos essa área de **painel da criança**. É onde você encontra os controles da conta dela.
+Siga a confirmação de que você é adulto pelos métodos apresentados pelo Roblox. A documentação menciona documento oficial ou cartão de crédito; a gravação da equipe mostra opções de câmera e identidade. A tela disponível para você pode ser diferente. Preencha os dados apenas no procedimento oficial, sem enviar documentos, senhas ou códigos para jogadores.
+
+<figure class="article-screenshot">
+  <a href="/media/artigos/roblox-controle-parental/verificar-responsavel.webp" target="_blank" rel="noopener" aria-label="Ampliar: Tela Verifique se você é um responsável, com os botões Verificar com a câmera e Verificar com identidade. (abre em outra aba)">
+    <img src="/media/artigos/roblox-controle-parental/verificar-responsavel.webp" alt="Tela Verifique se você é um responsável, com os botões Verificar com a câmera e Verificar com identidade." width="576" height="816" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>A gravação mostra estas duas opções para confirmar o responsável. Escolha entre os métodos que <strong>o próprio Roblox apresentar</strong> e leia as instruções de privacidade antes de prosseguir.
+    <span class="screenshot-source">Vídeo “4° vinculação do responsável - tela responsável”, em 0min50s. Recorte da gravação da equipe. Toque na imagem para ampliar.</span>
+  </figcaption>
+</figure>
+
+### 3. Confira a criança e conclua a vinculação
+
+Ao aparecer a tela de vinculação, confira se o perfil é o correto, leia as condições e toque em **Concordar**. Na sequência gravada, o Roblox também pede para conferir a data de nascimento da criança. Informe a data real e leia o aviso antes de continuar; não aumente a idade para liberar recursos.
+
+<figure class="article-screenshot">
+  <a href="/media/artigos/roblox-controle-parental/data-nascimento.webp" target="_blank" rel="noopener" aria-label="Ampliar: Tela de confirmação da data de nascimento da criança, com campos vazios e botão Continuar. (abre em outra aba)">
+    <img src="/media/artigos/roblox-controle-parental/data-nascimento.webp" alt="Tela de confirmação da data de nascimento da criança, com campos vazios e botão Continuar." width="576" height="827" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>A data influencia o acesso a conteúdos e funções. O aviso dessa tela informa que a definição só pode ser feita uma vez: confira os dados com atenção.
+    <span class="screenshot-source">Vídeo “5° confirmar vinculação da criança”, em 0min06s. Recorte da gravação da equipe. Toque na imagem para ampliar.</span>
+  </figcaption>
+</figure>
+
+**Para os próximos ajustes, use a conta do adulto.** Abra **Configurações → Controles dos responsáveis** e selecione a criança vinculada. Neste artigo, essa área será chamada de **painel da criança**.
+
+<figure class="article-screenshot">
+  <a href="/media/artigos/roblox-controle-parental/painel-controles.webp" target="_blank" rel="noopener" aria-label="Ampliar: Painel dos controles parentais com Amizades, Restrições de conteúdo, Comunicação e Restrição de gastos. (abre em outra aba)">
+    <img src="/media/artigos/roblox-controle-parental/painel-controles.webp" alt="Painel dos controles parentais com Amizades, Restrições de conteúdo, Comunicação e Restrição de gastos." width="576" height="1189" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>No exemplo, a lista de amizades está vazia. Abaixo aparecem as <strong>Configurações que você gerencia</strong>, usadas para revisar conteúdo, comunicação e compras.
+    <span class="screenshot-source">Vídeo “6° apresentação controles e limite de tempo”, em 0min22s. Recorte da gravação da equipe. Toque na imagem para ampliar.</span>
+  </figcaption>
+</figure>
 
 ## Como escolher os jogos disponíveis
 
-Você pode definir o tipo de conteúdo disponível para a criança nos jogos:
+### Leia a classificação antes de escolher
 
-1. No painel da criança, encontre **Configurações gerenciadas por você**.
-2. Toque em **Restrições de conteúdo**.
-3. Abra **Maturidade do conteúdo**.
-4. Leia a descrição apresentada e escolha o nível adequado para a criança.
+No painel da criança, procure **Configurações que você gerencia → Restrições de conteúdo → Maturidade do conteúdo**. Leia a descrição e escolha o nível que faz sentido para a criança.
 
-**Maturidade do conteúdo** é o nome do ajuste que indica o tipo de cenas e situações presentes nos jogos, como violência ou situações que provocam medo. Leia a descrição do nível antes de escolher e peça à criança que mostre os jogos de que gosta.
+**Maturidade do conteúdo** indica situações que podem aparecer nos jogos:
 
-Um jogo acima do nível escolhido fica bloqueado para jogar, mas ainda pode aparecer na pesquisa. **Ver o nome de um jogo na busca não significa que a criança consegue entrar nele.**
+- **Mínimo:** pode incluir violência leve ocasional ou situações leves de medo.
+- **Leve:** pode apresentar essas situações com mais frequência, além de humor e sangue não realista.
+- **Moderado:** pode incluir violência, medo e outros conteúdos de maior intensidade.
 
-### Bloquear um jogo específico
+O nome do nível, sozinho, não explica todo o jogo. Leia os descritores e conheça a experiência junto da criança. **Restrito é destinado a adultos com idade verificada**, não uma opção a liberar neste guia.
 
-Se você decidiu que a criança não deve acessar determinado jogo:
+<figure class="article-screenshot">
+  <a href="/media/artigos/roblox-controle-parental/maturidade-conteudo.webp" target="_blank" rel="noopener" aria-label="Ampliar: Lista de maturidade do conteúdo com os níveis Moderado, Leve e Mínimo e suas descrições. (abre em outra aba)">
+    <img src="/media/artigos/roblox-controle-parental/maturidade-conteudo.webp" alt="Lista de maturidade do conteúdo com os níveis Moderado, Leve e Mínimo e suas descrições." width="576" height="827" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>A imagem mostra <strong>Moderado</strong> selecionado na demonstração; isso <strong>não é uma recomendação</strong> para a criança. Leia as descrições e revise a escolha conforme sua idade e sensibilidade.
+    <span class="screenshot-source">Vídeo “5° confirmar vinculação da criança”, em 0min26s. Recorte da gravação da equipe. Toque na imagem para ampliar.</span>
+  </figcaption>
+</figure>
 
-1. Volte a **Restrições de conteúdo**.
-2. Toque em **Jogos bloqueados**.
-3. Toque no sinal **+** e escreva o nome do jogo.
-4. Selecione o jogo correto, toque em **Bloquear** e confirme.
+As contas Kids e Select também têm regras de catálogo. Alterar um nível não garante que todos os jogos serão liberados. Um jogo indisponível pode aparecer na busca, mesmo sem permitir a entrada: **encontrar o nome não significa conseguir jogar**.
 
-Se a criança já estiver jogando, o bloqueio impedirá a próxima entrada. Para encerrar a partida naquele momento, peça que ela saia do jogo.
+### Bloqueie ou avalie um jogo específico
 
-### Quando a criança pedir para liberar um jogo
+Para bloquear, abra **Restrições de conteúdo → Jogos bloqueados**, toque em **+**, busque o jogo correto e confirme em **Bloquear**. Se a criança estiver numa partida, o bloqueio passa a impedir a próxima entrada; combinem que ela saia para encerrar naquele momento.
 
-Os pedidos aparecem em **Solicitações pendentes**. Conheça o jogo antes de escolher **Permitir** ou **Não permitir**. Em **Restrições de conteúdo → Jogos permitidos**, você pode revisar as autorizações que já deu.
+Pedidos de acesso aparecem em **Solicitações pendentes**. Conheça o jogo antes de escolher **Permitir** ou **Não permitir**. Revise autorizações em **Restrições de conteúdo → Jogos permitidos**.
+
+O bloqueio e a aprovação de jogos específicos não são demonstrados nas gravações fornecidas; esses caminhos seguem as orientações oficiais listadas ao final.
 
 ## Como revisar conversas e amizades
 
-**Chat** significa conversa por mensagens. No Roblox, conversar no jogo e mandar uma mensagem direta são opções diferentes.
+**Chat** significa conversa por mensagens. Conversar publicamente numa partida, enviar mensagens diretas e conversar com amigos fora dela são recursos diferentes.
 
-1. No painel da criança, vá a **Configurações gerenciadas por você**.
-2. Toque em **Comunicação**.
-3. Abra **Chat do jogo**, também chamado de **Chat de experiência**.
-4. Leia e ajuste separadamente as opções de conversa no jogo e de conversa direta.
+O chat fica **desativado por padrão no Roblox Kids**. No Select, o acesso é gradual e depende de idade, verificação, permissões e região. **Não basta vincular o responsável para liberar todas as conversas.**
 
-A conversa no jogo permite trocar mensagens com outros jogadores daquela partida. A conversa direta permite falar de forma individual com outro jogador.
+No painel, abra **Configurações que você gerencia → Comunicação** e leia cada opção disponível. Procure **Chat do jogo** ou **Chat de experiência**, as mensagens diretas e, quando aparecer, a conversa com amigos. Se o combinado é jogar sem conversar, mantenha as opções correspondentes desativadas ou em **Ninguém**. Não é necessário liberar chat para fazer os demais ajustes.
 
-**Se o combinado da família é jogar sem essas conversas, mantenha as duas opções desativadas.** Se o Roblox pedir confirmação de idade ou autorização para ativá-las, você não precisa liberar o chat para seguir com os demais cuidados deste guia.
+Esses controles não abrangem necessariamente ferramentas próprias de comunicação criadas dentro de um jogo. Abra a experiência com a criança e observe como as pessoas interagem. Esta etapa não aparece detalhada nas gravações; consulte a [central de controles parentais do Roblox](https://about.roblox.com/parental-controls) se os nomes forem diferentes.
 
-Alguns jogos têm ferramentas próprias de comunicação que não são controladas por esses botões. Por isso, abra os jogos com a criança e observe também o que é possível fazer dentro deles.
+### Conheça a lista de contatos
 
-### Confira quem está na lista de amizades
+No painel, procure **Amizades** ou **Conexões → Gerenciar**. Pergunte quem são os perfis e como se conheceram. Para um contato indesejado, use os **três pontos → Bloquear**; para comunicar um comportamento inadequado, escolha **Denunciar**.
 
-No painel, encontre **Amizades** e toque em **Gerenciar**. Você verá os nomes e os personagens dos perfis adicionados. Pergunte à criança quem são essas pessoas e como se conheceram.
-
-Para bloquear um contato, toque nos **três pontos** ao lado do perfil, escolha **Bloquear** e confirme. A opção **Denunciar** serve para informar ao Roblox que houve um comportamento inadequado.
-
-Explique com calma: “Mesmo que alguém esteja na sua lista de amizades, não conte sua senha, seu endereço ou o nome da sua escola”.
+Conversem também sobre não compartilhar senha, endereço, escola ou fotos pessoais. Estar na lista de amizades não comprova quem está por trás do perfil. Se houver um pedido de **amigo de confiança**, avalie quem é a pessoa antes de aprovar.
 
 ## Como definir o tempo de uso
 
-O limite diário determina por quanto tempo a criança poderá usar o Roblox naquele dia.
+Para crianças menores de 13 anos, o responsável vinculado pode definir um limite diário:
 
-1. No painel da criança, encontre **Tempo de tela**.
-2. Toque em **Gerenciar**.
-3. Abra **Limite do tempo de tela** e depois **Limite diário**.
-4. Escolha a duração combinada e confira o valor que ficou registrado.
+1. No painel da criança, localize **Tempo de tela** e toque em **Gerenciar**.
+2. Abra **Limite de tempo de tela**.
+3. Toque em **Limite diário** e selecione a duração combinada.
+4. Volte à tela e **confira o valor registrado**. Se continuar em **Sem limite**, a restrição não está definida.
 
-Ao atingir esse tempo, a criança recebe um aviso e fica impedida de usar o Roblox pelo restante do dia. **O limite vale para o Roblox; os outros aplicativos do aparelho continuam com seus próprios ajustes.**
+<figure class="article-screenshot">
+  <a href="/media/artigos/roblox-controle-parental/limite-diario.webp" target="_blank" rel="noopener" aria-label="Ampliar: Tela Limite de tempo de tela com o campo Limite diário ainda definido como Sem limite. (abre em outra aba)">
+    <img src="/media/artigos/roblox-controle-parental/limite-diario.webp" alt="Tela Limite de tempo de tela com o campo Limite diário ainda definido como Sem limite." width="576" height="400" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Abra o campo <strong>Limite diário</strong>. Neste momento da gravação, a conta ainda está em <strong>Sem limite</strong>.
+    <span class="screenshot-source">Vídeo “6° apresentação controles e limite de tempo”, em 0min30s. Recorte da gravação da equipe. Toque na imagem para ampliar.</span>
+  </figcaption>
+</figure>
 
-Avise a criança antes de configurar. Combinem como encerrar as partidas e qual será a atividade seguinte, como lanchar, brincar ou tomar banho. Um aviso antes do fim do tempo pode ajudar nessa mudança de atividade.
+<figure class="article-screenshot">
+  <a href="/media/artigos/roblox-controle-parental/opcoes-tempo.webp" target="_blank" rel="noopener" aria-label="Ampliar: Lista do limite diário com Sem limite selecionado e opções de 15 minutos, 30 minutos, 45 minutos e outras durações. (abre em outra aba)">
+    <img src="/media/artigos/roblox-controle-parental/opcoes-tempo.webp" alt="Lista do limite diário com Sem limite selecionado e opções de 15 minutos, 30 minutos, 45 minutos e outras durações." width="576" height="1141" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>A lista apresenta durações possíveis, mas <strong>Sem limite ainda está selecionado</strong>. Escolha uma duração e confira o resultado ao voltar. Os valores são opções do aplicativo, não recomendações de tempo de tela.
+    <span class="screenshot-source">Vídeo “6° apresentação controles e limite de tempo”, em 0min34s. Recorte da gravação da equipe. Toque na imagem para ampliar.</span>
+  </figcaption>
+</figure>
 
-Na mesma área, você pode consultar o tempo de uso recente e os jogos mais acessados. Use essas informações para conhecer a rotina da criança e conversar sobre o que está funcionando.
+Segundo o Roblox, ao atingir o limite a criança recebe um aviso e não pode continuar usando a plataforma naquele dia. **Esse ajuste vale para o Roblox, não para todos os aplicativos do celular.** Para cuidar de outros apps no Android, veja o [guia do Family Link](/artigos/family-link-primeiros-passos/).
+
+A mesma área permite consultar o uso recente e os jogos mais acessados. Aproveite para perguntar quais partidas ela gosta e como pode encerrar sem se sentir surpreendida. Combinem uma atividade depois do jogo e um aviso antes da pausa.
+
+Para adolescentes de 13 anos ou mais, o Roblox oferece limites que o próprio usuário configura. O caminho do adulto e o alcance dos controles mudam; não suponha que o limite infantil continue disponível.
 
 ## Como ajustar gastos e notificações
 
-**Robux** é o dinheiro virtual usado dentro do Roblox para comprar itens e recursos. Comprar Robux envolve dinheiro de verdade. Antes de qualquer compra, confira o preço e converse com a criança sobre o que ela quer adquirir.
+**Robux** é a moeda virtual do Roblox. Comprar Robux envolve dinheiro de verdade; antes de pagar, confiram juntos o preço e o que será adquirido.
 
-### Defina um limite de compras por mês
+### Limite mensal de compras
 
-1. No painel da criança, abra **Configurações gerenciadas por você**.
-2. Toque em **Restrições de gastos**.
-3. Abra **Limite de gastos mensal**.
-4. Informe o valor escolhido, confira a moeda indicada e toque em **Atualizar**.
+Na conta do adulto, selecione a criança e abra **Configurações que você gerencia → Restrição de gastos → Limite de gastos mensal**. Informe o valor escolhido, confira a moeda e confirme em **Atualizar**. Essa função é voltada a crianças menores de 13 anos.
 
-Esse limite não impede o uso de **cartões-presente**, que são cartões ou códigos comprados para adicionar crédito. Também não controla compras feitas pelo **Xbox**, um aparelho de videogame. Para compras por videogames, revise as permissões de pagamento do próprio aparelho; não conte apenas com o limite do Roblox.
+**O limite não controla o resgate de cartões-presente e não cobre gastos feitos pelo Xbox.** Em videogames, revise também os controles de compra do aparelho. Não conte apenas com o ajuste do Roblox.
 
-### Receba avisos sobre as compras
+### Avisos de compras
 
-Ainda em **Restrições de gastos**, abra **Notificações de gastos**. Notificação é um aviso. Escolha **Todas as transações** para receber avisos de cada compra acompanhada pelo recurso.
+Em **Restrição de gastos → Notificações de gastos**, escolha a frequência desejada. **Todas as transações** permite acompanhar cada compra coberta pelo recurso.
 
-**O aviso informa uma compra que aconteceu; ele não pede sua autorização antes de comprar.** Mantenha também o combinado de que a criança deve conversar com você antes de gastar.
+O aviso informa um gasto; **não significa pedir autorização antes de comprar**. Mantenham o combinado de conversar antes de usar dinheiro e revisem meios de pagamento e assinaturas.
+
+As gravações mostram onde fica a restrição de gastos, mas não concluem a configuração de um valor ou de notificações. Essas orientações vêm dos artigos oficiais de limites e avisos de compras.
+
+## Façam um teste juntos
+
+Escolham um ajuste para verificar depois de configurar:
+
+1. **Confiram a vinculação:** na conta do adulto, abra o perfil correto da criança. Na conta dela, verifique se o responsável aparece vinculado.
+2. **Confiram um bloqueio de jogo:** saiam da experiência antes de tentar entrar de novo. Observem se a entrada foi impedida; o nome ainda pode aparecer na busca.
+3. **Confiram o tempo:** revisem o valor salvo e acompanhem uma sessão até o limite combinado. Observem o aviso, sem alterar a data ou a idade para contornar a restrição.
+
+O vídeo **“7° testando-tempo-de-tela-jogo”** mostra a conta da criança vinculada e uma sessão de jogo, mas **não demonstra claramente um aviso de limite atingido**. A gravação anterior também termina com **Sem limite**. Por isso, as imagens ensinam a localizar o ajuste, e a confirmação do funcionamento deve ser feita no aparelho da família.
+
+## Se alguma etapa não funcionar
+
+- **O convite não chegou:** confira a digitação, a caixa de spam e o e-mail associado à conta do adulto.
+- **A criança não aparece no painel:** confira se entrou na conta do responsável e concluiu a vinculação, incluindo o consentimento solicitado.
+- **O menu tem outro nome:** procure Configurações pelo perfil, por Mais ou Eu. Atualize o app e confira as orientações oficiais; os recursos dependem da idade e região.
+- **O limite não funciona:** reabra o painel correto e confira se ainda aparece Sem limite. Um valor apenas visto na lista não comprova que foi selecionado.
+- **Um jogo continua na busca:** isso pode acontecer mesmo quando a entrada está bloqueada. Testem o acesso depois de sair da partida anterior.
+
+Se aparecer um erro, anote a mensagem sem compartilhar senhas ou códigos. Use o [suporte oficial do Roblox](https://www.roblox.com/support) para dúvidas sobre a conta.
 
 ## Se algo incomodar: como pedir ajuda
 
-Combine com a criança: **“Se alguém pedir segredo, fotos ou mandar algo que incomode, pode me chamar. Vamos resolver juntos.”** Ouça primeiro o que aconteceu, para que ela se sinta à vontade para pedir ajuda novamente.
+Combine uma frase simples: **“Se alguém pedir segredo, foto ou mandar algo que incomode, pode me chamar. Vamos resolver juntos.”** Ouça primeiro o que aconteceu e ajude a criança a sair da situação.
 
-Para denunciar uma situação durante o jogo:
+Para denunciar durante uma partida, abra o **menu do Roblox → Denunciar**, escolha a pessoa ou a experiência, indique o motivo e descreva o ocorrido. Quando houver uma mensagem inadequada, denuncie o conteúdo específico para que a moderação tenha contexto.
 
-1. Abra o menu do Roblox, no canto superior esquerdo da tela.
-2. Toque na bandeira ou na opção **Denunciar**.
-3. Escolha se o problema é com uma **Pessoa** ou com a **Experiência**, ou seja, o jogo.
-4. Se for uma pessoa, selecione o nome do jogador.
-5. Escolha o motivo, descreva o que aconteceu e toque em **Enviar**.
-
-Ao denunciar, indique a mensagem ou o conteúdo que causou o problema. Isso ajuda a equipe do Roblox a entender o ocorrido. **Bloquear serve para limitar o contato; denunciar serve para comunicar o problema à equipe do Roblox.**
+**Bloquear limita o contato; denunciar informa o problema à equipe do Roblox.** Ensine onde ficam essas opções antes de a criança precisar delas.
 
 ## Um primeiro combinado para hoje
 
-Você pode começar por um cuidado de cada vez:
+Conectem as contas, conheçam um jogo favorito e escolham um cuidado para testar. Pode ser jogar sem chat, pedir ajuda diante de uma mensagem estranha ou encerrar a partida num horário combinado.
 
-1. Conecte sua conta à da criança.
-2. Peça que ela mostre um jogo favorito e explique o que faz nele.
-3. Revise as conversas e combine o tempo de uso.
-4. Explique que qualquer compra deve ser conversada antes.
-5. Mostre como sair de um jogo e chamar você quando algo incomodar.
+Depois de alguns dias, conversem: **“O que funcionou? O que ficou difícil? Precisamos mudar alguma coisa?”** Os controles ajudam a organizar o uso, e a presença de um adulto disposto a escutar ajuda a criança a entender o cuidado.
 
-Depois de alguns dias, conversem: “O combinado funcionou? O que ficou difícil?”. Os controles ajudam a organizar o uso, e a conversa ajuda a criança a entender os cuidados e a procurar apoio.
-
-*Conteúdo elaborado com base nas orientações do Roblox, consultadas em 29/09/2026.*
+*Artigo elaborado a partir do “Roteiro - Roblox” e das gravações da equipe, com conferência das fontes oficiais em 06/10/2026. As capturas foram recortadas para evitar e-mails, senhas, documentos e notificações pessoais. Os tempos das legendas se referem aos arquivos de gravação, não ao vídeo editado.*
