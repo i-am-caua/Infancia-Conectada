@@ -6,10 +6,11 @@ publishedAt: 2026-10-27
 updatedAt: 2026-10-27
 author: "Equipe Cuidado Digital"
 readingMinutes: 8
-featured: false
+featured: true
 draft: false
 video:
   provider: youtube
+  id: "pl2sXPhJ0sE"
   format: shorts
   title: "Redes sociais e vídeos curtos | Cuidado Digital"
 cover:

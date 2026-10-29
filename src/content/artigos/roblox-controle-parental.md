@@ -6,7 +6,7 @@ publishedAt: 2026-10-06
 updatedAt: 2026-10-06
 author: "Equipe Cuidado Digital"
 readingMinutes: 12
-featured: true
+featured: false
 draft: false
 video:
   provider: youtube
